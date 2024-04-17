@@ -9,15 +9,15 @@ import Contact from "../pages/Contact.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/yachting/",
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "/yachting/",
         element: <MainPage />,
       },
       {
-        path: "contact",
+        path: "/yachting/contact/",
         element: <Contact />,
       },
     ],

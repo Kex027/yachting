@@ -5,8 +5,8 @@ import ChangeLanguage from "./ChangeLanguage.jsx";
 const Header = () => {
   return (
     <div>
-      <Link to={"/"}>Home</Link>
-      <Link to={"/contact"}>Contact</Link>
+      <Link to={"/yachting/"}>Home</Link>
+      <Link to={"/yachting/contact"}>Contact</Link>
       <ChangeLanguage />
     </div>
   );

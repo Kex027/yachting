@@ -1,16 +1,14 @@
 import "./App.css";
-import { useTranslation } from "react-i18next";
-import ChangeLanguage from "../components/ChangeLanguage.jsx";
+import { Outlet } from "react-router-dom";
+import Header from "../components/Header.jsx";
 
 function App() {
-  const { t } = useTranslation();
-
   return (
-    <div>
-      <h1>{t("Welcome to React")}</h1>
-      <p>{t("desc")}</p>
-      <ChangeLanguage />
-    </div>
+    <>
+      <Header />
+
+      <Outlet />
+    </>
   );
 }
 

@@ -6,6 +6,8 @@ import "./i18n.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainPage from "../pages/MainPage.jsx";
 import Contact from "../pages/Contact.jsx";
+import { CssVarsProvider } from "@mui/joy";
+import theme from "./theme.js";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +28,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <CssVarsProvider theme={theme}>
+      <RouterProvider router={router} />
+    </CssVarsProvider>
   </React.StrictMode>,
 );

@@ -1,0 +1,21 @@
+.content {
+  position: absolute;
+  height: 3.5rem;
+  width: 100%;
+  max-width: var(--max-width-content);
+}
+
+.logo {
+  height: 2rem;
+  margin-left: 1rem;
+}
+
+.burgerButton {
+  color: white;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+}

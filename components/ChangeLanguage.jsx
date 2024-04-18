@@ -1,6 +1,4 @@
-import React from "react";
-import { Dropdown, Menu, MenuButton, MenuItem } from "@mui/joy";
-import { TbWorld } from "react-icons/tb";
+import { Button } from "@mui/joy";
 import { useTranslation } from "react-i18next";
 
 const ChangeLanguage = () => {
@@ -10,27 +8,12 @@ const ChangeLanguage = () => {
   };
 
   return (
-    <Dropdown>
-      <MenuButton variant="solid">
-        <TbWorld />
-      </MenuButton>
-      <Menu variant="soft">
-        <MenuItem
-          onClick={() => {
-            changeLanguage("pl");
-          }}
-        >
-          PL
-        </MenuItem>
-        <MenuItem
-          onClick={() => {
-            changeLanguage("en");
-          }}
-        >
-          EN
-        </MenuItem>
-      </Menu>
-    </Dropdown>
+    <Button
+      variant={"soft"}
+      onClick={() => changeLanguage(i18n.language === "en" ? "pl" : "en")}
+    >
+      {i18n.language === "en" ? "PL" : "EN"}
+    </Button>
   );
 };
 

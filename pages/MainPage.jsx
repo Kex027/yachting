@@ -1,12 +1,21 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
+import yachtSwimming from "/yachtSwimming.mp4";
+import LandingPage from "../components/LandingPage.jsx";
+import Footer from "../components/Footer.jsx";
 
 const MainPage = () => {
-  const { t } = useTranslation();
-
   return (
-    <div>
-      main page <h1>{t("Welcome to React")}</h1>
+    <div
+      style={{
+        minHeight: "100vh",
+      }}
+    >
+      <LandingPage />
+
+      <video width={"100%"} autoPlay muted loop>
+        <source src={yachtSwimming} type={"video/mp4"} />
+      </video>
+
+      <Footer />
     </div>
   );
 };

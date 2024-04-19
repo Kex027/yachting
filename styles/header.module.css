@@ -17,5 +17,5 @@
 .navLink {
   color: white;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: var(--medium-letter-spacing);
 }

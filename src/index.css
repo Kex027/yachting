@@ -7,11 +7,16 @@
   font-style: normal;
 
   --primary: #022C4F;
+  --light-blue: #ABCDFF;
   --secondary: #F1CF81;
   --neutral: #A7AAAD;
 
   --max-width-content: 960px;
   --longest-btn: 260px;
+
+  --normal-letter-spacing: 1px;
+  --medium-letter-spacing: 2px;
+  --wide-letter-spacing: 4px;
 }
 
 * {
@@ -29,4 +34,12 @@ body {
 
 .noDecoration {
   text-decoration: none;
+}
+
+.goldText {
+  color: var(--secondary)
+}
+
+.lightBlueText {
+  color: var(--light-blue)
 }

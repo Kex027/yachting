@@ -11,6 +11,10 @@ export const translationsEN = {
     "Footer copyright": "© 2024 Company Name Gdańsk. All rights reserved.",
     "Write to us": "Write to us",
     "Whare are we": "Whare are we?",
+    "Encouragement title":
+      "Surrender yourself into our hands and feel the wind in your hair.",
+    "Luxury boat": "Luxurious 7-person Solano 27 boat",
+    "Check out": "Check out the boat",
   },
 };
 
@@ -28,5 +32,8 @@ export const translationsPL = {
       "© 2024 Nazwa Firmy Gdańsk. Wszelkie prawa zastrzeżone.",
     "Write to us": "Napisz do nas",
     "Whare are we": "Gdzie jesteśmy?",
+    "Encouragement title": "Oddaj sie w nasze ręce i poczuj wiatr we włosach",
+    "Luxury boat": "luksusowa 7-osobowa łódz solano 27",
+    "Check out": "Zobacz łódź",
   },
 };

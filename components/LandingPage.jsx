@@ -12,7 +12,12 @@ const LandingPage = () => {
         {t("Home page heading").toUpperCase()}
       </h1>
 
-      <Stack direction={"row"} justifyContent={"center"} p={2}>
+      <Stack
+        direction={"row"}
+        justifyContent={"center"}
+        p={2}
+        letterSpacing={{ sm: "var(--wide-letter-spacing)" }}
+      >
         <Link
           className={`homePageBtn noDecoration ${style.leftBtn} ${style.btn}`}
           to={"/yachting/"}

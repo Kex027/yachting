@@ -1,0 +1,16 @@
+.container {
+  width: 100%;
+}
+
+.content {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.goldText {
+  color: var(--secondary)
+}
+
+.link {
+  letter-spacing: var(--wide-letter-spacing);
+}

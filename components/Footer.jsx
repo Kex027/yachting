@@ -97,7 +97,7 @@ const Footer = () => {
       <Stack
         textAlign={"center"}
         fontSize={".75rem"}
-        letterSpacing={"1px"}
+        letterSpacing={"var(--normal-letter-spacing)"}
         className={style.copyright}
       >
         {t("Footer copyright")}

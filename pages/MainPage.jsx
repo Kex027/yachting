@@ -1,6 +1,6 @@
-import yachtSwimming from "/yachtSwimming.mp4";
 import LandingPage from "../components/LandingPage.jsx";
 import Footer from "../components/Footer.jsx";
+import Encouragement from "../components/Encouragement.jsx";
 
 const MainPage = () => {
   return (
@@ -11,9 +11,7 @@ const MainPage = () => {
     >
       <LandingPage />
 
-      <video width={"100%"} autoPlay muted loop>
-        <source src={yachtSwimming} type={"video/mp4"} />
-      </video>
+      <Encouragement />
 
       <Footer />
     </div>

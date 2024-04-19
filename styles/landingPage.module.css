@@ -19,7 +19,6 @@
   background-color: rgba(26, 26, 26, 0.9);
   color: white;
   border: none;
-  letter-spacing: 4px;
   max-width: var(--longest-btn);
 }
 

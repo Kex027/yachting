@@ -9,7 +9,8 @@ const MobileHeader = ({ open, setOpen }) => {
       anchor={"right"}
       open={open}
       onClose={() => setOpen(false)}
-      color={"danger"}
+      variant={"solid"}
+      color={"neutral"}
     >
       <Stack alignItems={"flex-end"} gap={2} mt={1}>
         <Button

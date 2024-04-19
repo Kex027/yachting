@@ -11,6 +11,14 @@ const theme = extendTheme({
         }),
       },
     },
+    JoyDrawer: {
+      styleOverrides: {
+        content: ({ ownerState: { color } }) =>
+          color === "neutral" && {
+            backgroundColor: "rgba(255, 255, 255, 0.5)",
+          },
+      },
+    },
   },
 });
 

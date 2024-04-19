@@ -1,6 +1,7 @@
 import LandingPage from "../components/LandingPage.jsx";
 import Footer from "../components/Footer.jsx";
 import Encouragement from "../components/Encouragement.jsx";
+import Offer from "../components/Offer.jsx";
 
 const MainPage = () => {
   return (
@@ -12,6 +13,8 @@ const MainPage = () => {
       <LandingPage />
 
       <Encouragement />
+
+      <Offer />
 
       <Footer />
     </div>

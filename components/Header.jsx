@@ -1,16 +1,25 @@
 import { Button, Stack } from "@mui/joy";
 import { IoMenu } from "react-icons/io5";
 import viteLogo from "/vite.svg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import MobileHeader from "./MobileHeader.jsx";
 import style from "../styles/header.module.css";
 import ChangeLanguage from "./ChangeLanguage.jsx";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import MotionButton from "./MotionButton.jsx";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
+  const links = [
+    { link: "/yachting/", text: t("Home page") },
+    { link: "/yachting/contact", text: t("Reservation") },
+    { link: "/yachting/pricing", text: t("Pricing") },
+    { link: "/yachting/spec", text: t("Boat specifications") },
+    { link: "/yachting/contact", text: t("Contact") },
+  ];
 
   return (
     <Stack alignItems={"center"} width={"100vw"}>
@@ -41,21 +50,21 @@ const Header = () => {
           alignItems={"center"}
           sx={{ display: { xs: "none", md: "flex" } }}
         >
-          <Link to={"/yachting/"} className={style.navLink}>
-            {t("Home page")}
-          </Link>
-          <Link to={"/yachting/"} className={style.navLink}>
-            {t("Reservation")}
-          </Link>
-          <Link to={"/yachting/"} className={style.navLink}>
-            {t("Pricing")}
-          </Link>
-          <Link to={"/yachting/"} className={style.navLink}>
-            {t("Boat specifications")}
-          </Link>
-          <Link to={"/yachting/"} className={style.navLink}>
-            {t("Contact")}
-          </Link>
+          {links?.map(({ link, text }) => (
+            <motion.div key={text} style={{ overflow: "hidden" }}>
+              <NavLink
+                to={link}
+                end
+                className={({ isActive }) =>
+                  `${style.navLink} ${isActive ? style.activeLink : ""}`
+                }
+              >
+                <MotionButton>
+                  <span className={style.linkText}>{text}</span>
+                </MotionButton>
+              </NavLink>
+            </motion.div>
+          ))}
 
           <ChangeLanguage />
         </Stack>

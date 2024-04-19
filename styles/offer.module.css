@@ -1,0 +1,15 @@
+.container {
+  background-color: var(--neutral);
+}
+
+.content {
+  color: black;
+  padding: 2rem 1rem;
+
+  width: 100%;
+  max-width: var(--max-width-content);
+}
+
+.btn {
+  max-width: 200px;
+}

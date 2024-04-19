@@ -18,4 +18,13 @@
   color: white;
   text-decoration: none;
   letter-spacing: var(--medium-letter-spacing);
+
+}
+
+.activeLink {
+  color: var(--secondary);
+}
+
+.linkText {
+  padding: 0 .5rem;
 }

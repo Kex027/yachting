@@ -26,6 +26,9 @@ export const translationsEN = {
       "When choosing our boat, you don't have to worry about qualifications. The price includes professional service from qualified skippers, so you can fully relax and enjoy the cruise, admiring the waters of the Gdańsk Bay.",
     "Offer 3 description":
       "When choosing our boat, you don't have to worry about qualifications. The price includes professional service from qualified skippers, so you can fully relax and enjoy the cruise, admiring the waters of the Gdańsk Bay.",
+    "Do you have questions": "Do you have questions?",
+    "Check out us": "Check out us",
+    "Boat data": "Boat data",
   },
 };
 
@@ -57,5 +60,8 @@ export const translationsPL = {
       "Wybierając naszą łódź nie musisz marwtić się ouprawnienia. W cenie zapewniona jest profesjonalna obsługa wykwalifkowanych sterników,dzięki czemu możesz w pełni zrelaksować się i cieszyć rejsem, podziwiając akwen zatoki gdańskiej.",
     "Offer 3 description":
       "Wybierając naszą łódź nie musisz marwtić się ouprawnienia. W cenie zapewniona jest profesjonalna obsługa wykwalifkowanych sterników,dzięki czemu możesz w pełni zrelaksować się i cieszyć rejsem, podziwiając akwen zatoki gdańskiej.",
+    "Do you have questions": "Masz pytania?",
+    "Check out us": "Sprawdź nas",
+    "Boat data": "Dane łodzi",
   },
 };

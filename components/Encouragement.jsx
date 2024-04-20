@@ -1,9 +1,10 @@
 import yachtSwimming from "/yachtSwimming.mp4";
 import { useTranslation } from "react-i18next";
-import { Box, Divider, Stack } from "@mui/joy";
+import { Box, Stack } from "@mui/joy";
 import { Link } from "react-router-dom";
 import style from "../styles/encouragement.module.css";
 import MotionSection from "./MotionSection.jsx";
+import GoldDivider from "./GoldDivider.jsx";
 
 const Encouragement = () => {
   const { t } = useTranslation();
@@ -25,17 +26,7 @@ const Encouragement = () => {
           </h1>
         </MotionSection>
         <MotionSection>
-          <Divider
-            className={`bold`}
-            size={"lg"}
-            sx={{
-              "--Divider-thickness": "2px",
-              "--Divider-lineColor": "var(--secondary)",
-              color: "var(--secondary)",
-            }}
-          >
-            {t("Luxury boat")}
-          </Divider>
+          <GoldDivider>{t("Luxury boat")}</GoldDivider>
         </MotionSection>
         <MotionSection>
           <Box>
@@ -45,7 +36,7 @@ const Encouragement = () => {
           </Box>
         </MotionSection>
         <Link to={"/yachting/"} className={`goldText ${style.link}`}>
-          {t("Check out")}
+          <MotionSection>{t("Check out")}</MotionSection>
         </Link>
       </Stack>
       <video

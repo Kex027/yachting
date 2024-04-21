@@ -1,0 +1,10 @@
+.container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 100%;
+  max-width: 280px;
+
+  padding: 1rem;
+}

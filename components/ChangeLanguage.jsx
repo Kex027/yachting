@@ -1,5 +1,6 @@
 import { Button } from "@mui/joy";
 import { useTranslation } from "react-i18next";
+import MotionButton from "./MotionButton.jsx";
 
 const ChangeLanguage = () => {
   const { i18n } = useTranslation();
@@ -12,7 +13,7 @@ const ChangeLanguage = () => {
       variant={"soft"}
       onClick={() => changeLanguage(i18n.language === "en" ? "pl" : "en")}
     >
-      {i18n.language === "en" ? "PL" : "EN"}
+      <MotionButton>{i18n.language === "en" ? "PL" : "EN"}</MotionButton>
     </Button>
   );
 };

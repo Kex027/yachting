@@ -29,6 +29,17 @@ export const translationsEN = {
     "Do you have questions": "Do you have questions?",
     "Check out us": "Check out us",
     "Boat data": "Boat data",
+    "Explore & chill with us": "Explore & chill with us",
+    "We invite you to": "We invite you to...",
+    "Welcome 1 title": "Heading 1",
+    "Welcome 2 title": "Heading 2",
+    "Welcome 3 title": "Heading 3",
+    "Welcome 1 description":
+      "desc 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consectetur cumque deserunt ea error expedita molestias perferendis quae recusandae rerum?",
+    "Welcome 2 description":
+      "desc 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consectetur cumque deserunt ea error expedita molestias perferendis quae recusandae rerum?",
+    "Welcome 3 description":
+      "desc 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consectetur cumque deserunt ea error expedita molestias perferendis quae recusandae rerum?",
   },
 };
 
@@ -63,5 +74,16 @@ export const translationsPL = {
     "Do you have questions": "Masz pytania?",
     "Check out us": "Sprawdź nas",
     "Boat data": "Dane łodzi",
+    "Explore & chill with us": "Zwiedzaj & wypoczywaj z nami",
+    "We invite you to": "Zapraszamy na...",
+    "Welcome 1 title": "Nagłówek 1",
+    "Welcome 2 title": "Nagłówek 2",
+    "Welcome 3 title": "Nagłówek 3",
+    "Welcome 1 description":
+      "opis 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consectetur cumque deserunt ea error expedita molestias perferendis quae recusandae rerum?",
+    "Welcome 2 description":
+      "opis 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consectetur cumque deserunt ea error expedita molestias perferendis quae recusandae rerum?",
+    "Welcome 3 description":
+      "opis 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consectetur cumque deserunt ea error expedita molestias perferendis quae recusandae rerum?",
   },
 };

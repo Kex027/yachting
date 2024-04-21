@@ -1,0 +1,15 @@
+.container {
+  background-color: var(--neutral);
+}
+
+.content {
+  width: 100%;
+  max-width: var(--max-width-content);
+  padding: 2rem 1rem;;
+
+  text-align: center;
+}
+
+.title {
+  color: var(--primary);
+}

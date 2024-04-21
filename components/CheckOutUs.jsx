@@ -1,6 +1,6 @@
 import { Stack } from "@mui/joy";
 import style from "../styles/checkOutUs.module.css";
-import GoldDivider from "./GoldDivider.jsx";
+import ColorDivider from "./ColorDivider.jsx";
 import { useTranslation } from "react-i18next";
 import MotionSection from "./MotionSection.jsx";
 import Tile from "./Tile.jsx";
@@ -10,9 +10,9 @@ const CheckOutUs = () => {
 
   return (
     <Stack className={"sectionInsetShadow"} alignItems={"center"}>
-      <Stack className={style.content} gap={2} mt={{ md: 4 }} mb={{ md: 4 }}>
+      <Stack className={style.content} gap={2} mb={{ md: 4 }}>
         <MotionSection>
-          <GoldDivider>{t("Do you have questions")}</GoldDivider>
+          <ColorDivider>{t("Do you have questions")}</ColorDivider>
         </MotionSection>
 
         <MotionSection>

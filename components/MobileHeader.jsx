@@ -31,12 +31,12 @@ const MobileHeader = ({ open, setOpen }) => {
               setOpen={setOpen}
             />
             <NavigationLink
-              link={"/yachting/"}
+              link={"/yachting/contact"}
               translateKey={"Reservation"}
               setOpen={setOpen}
             />
             <NavigationLink
-              link={"/yachting/"}
+              link={"/yachting/pricing"}
               translateKey={"Pricing"}
               setOpen={setOpen}
             />
@@ -46,7 +46,7 @@ const MobileHeader = ({ open, setOpen }) => {
               setOpen={setOpen}
             />
             <NavigationLink
-              link={"/yachting/"}
+              link={"/yachting/contact"}
               translateKey={"Contact"}
               setOpen={setOpen}
             />

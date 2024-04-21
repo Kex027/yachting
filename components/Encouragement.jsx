@@ -4,7 +4,7 @@ import { Box, Stack } from "@mui/joy";
 import { Link } from "react-router-dom";
 import style from "../styles/encouragement.module.css";
 import MotionSection from "./MotionSection.jsx";
-import GoldDivider from "./GoldDivider.jsx";
+import ColorDivider from "./ColorDivider.jsx";
 
 const Encouragement = () => {
   const { t } = useTranslation();
@@ -26,7 +26,7 @@ const Encouragement = () => {
           </h1>
         </MotionSection>
         <MotionSection>
-          <GoldDivider>{t("Luxury boat")}</GoldDivider>
+          <ColorDivider>{t("Luxury boat")}</ColorDivider>
         </MotionSection>
         <MotionSection>
           <Box>

@@ -1,14 +1,14 @@
 import { Divider } from "@mui/joy";
 
-const GoldDivider = ({ children }) => {
+const ColorDivider = ({ children, color = "var(--secondary)" }) => {
   return (
     <Divider
       className={`bold`}
       size={"lg"}
       sx={{
         "--Divider-thickness": "2px",
-        "--Divider-lineColor": "var(--secondary)",
-        color: "var(--secondary)",
+        "--Divider-lineColor": color,
+        color: color,
         width: "100%",
       }}
     >
@@ -17,4 +17,4 @@ const GoldDivider = ({ children }) => {
   );
 };
 
-export default GoldDivider;
+export default ColorDivider;

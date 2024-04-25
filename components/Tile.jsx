@@ -4,7 +4,7 @@ import MotionSection from "./MotionSection.jsx";
 import { motion } from "framer-motion";
 import { Box } from "@mui/joy";
 
-const Tile = ({ text }) => {
+const Tile = ({ text, link }) => {
   return (
     <motion.div
       initial={{ width: "50%" }}
@@ -12,10 +12,7 @@ const Tile = ({ text }) => {
       whileTap={{ width: "75%" }}
       className={`${style.adjustBox} ${style.rightBox}`}
     >
-      <Link
-        to={"/yachting/"}
-        className={`${style.boxLink} noDecoration goldText`}
-      >
+      <Link to={link} className={`${style.boxLink} noDecoration goldText`}>
         <MotionSection>
           <h2 className={`${style.boxText}`}>
             <Box

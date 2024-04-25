@@ -25,8 +25,11 @@ const CheckOutUs = () => {
           justifyContent={"space-between"}
           gap={2}
         >
-          <Tile text={t("Boat data")?.toUpperCase()} />
-          <Tile text={t("Contact")?.toUpperCase()} />{" "}
+          <Tile
+            text={t("Boat data")?.toUpperCase()}
+            link={"/yachting/boat_specification"}
+          />
+          <Tile text={t("Contact")?.toUpperCase()} link={"/yachting/contact"} />
         </Stack>
       </Stack>
     </Stack>

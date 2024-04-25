@@ -43,7 +43,7 @@ const Offer = () => {
         </Stack>
         <Stack direction={"row"} justifyContent={"center"} p={{ md: 2 }}>
           <Link
-            className={`homePageBtn noDecoration btn leftBtn btn-landing`}
+            className={`noDecoration btn leftBtn btn-landing`}
             to={"/yachting/"}
           >
             <MotionButton>
@@ -53,7 +53,7 @@ const Offer = () => {
             </MotionButton>
           </Link>
           <Link
-            className={`homePageBtn noDecoration btn rightBtn btn-landing`}
+            className={`noDecoration btn rightBtn btn-landing`}
             to={"/yachting/"}
           >
             <MotionButton>

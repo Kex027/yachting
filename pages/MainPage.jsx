@@ -1,25 +1,32 @@
 import LandingPage from "../components/LandingPage.jsx";
-import Footer from "../components/Footer.jsx";
 import Encouragement from "../components/Encouragement.jsx";
 import Offer from "../components/Offer.jsx";
 import CheckOutUs from "../components/CheckOutUs.jsx";
 import WelcomeTo from "../components/WelcomeTo.jsx";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 
 const MainPage = () => {
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-      }}
-    >
-      <LandingPage />
+    <>
+      <LandingPage
+        text={t("Landing title main")}
+        buttons={[
+          { text: t("Pricing"), link: "/yachting/pricing" },
+          { text: t("Reservation"), link: "/yachting/reservation" },
+        ]}
+      />
       <Encouragement />
       <Offer />
       <CheckOutUs />
       <WelcomeTo />
-
-      <Footer />
-    </div>
+    </>
   );
 };
 

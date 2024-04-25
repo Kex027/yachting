@@ -5,9 +5,12 @@ import "./index.css";
 import "./i18n.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainPage from "../pages/MainPage.jsx";
-import Contact from "../pages/Contact.jsx";
 import { CssVarsProvider } from "@mui/joy";
 import theme from "./theme.js";
+import Pricing from "../pages/Pricing.jsx";
+import BoatSpecification from "../pages/BoatSpecification.jsx";
+import Reservation from "../pages/Reservation.jsx";
+import Contact from "../pages/Contact.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +20,18 @@ const router = createBrowserRouter([
       {
         path: "/yachting/",
         element: <MainPage />,
+      },
+      {
+        path: "/yachting/reservation/",
+        element: <Reservation />,
+      },
+      {
+        path: "/yachting/pricing/",
+        element: <Pricing />,
+      },
+      {
+        path: "/yachting/boat_specification",
+        element: <BoatSpecification />,
       },
       {
         path: "/yachting/contact/",

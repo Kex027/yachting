@@ -1,13 +1,17 @@
 export const translationsEN = {
   translation: {
-    "Welcome to React": "Welcome to React and react-i18next",
-    desc: "nice description bro",
     "Home page": "Home page",
     Reservation: "Reservation",
     Pricing: "Pricing",
     "Boat specifications": "Boat specifications",
+    Specification: "Specification",
     Contact: "Contact",
-    "Home page heading": "Motorboat cruises around the Gdansk Bay.",
+    "Landing title main": "Motorboat cruises around the Gdansk Bay.",
+    "Landing title reservation": "Book a boat",
+    "Landing title pricing": "Motorboat cruises around the Gdansk Bay.",
+    "Landing title boat specification":
+      "Motorboat cruises around the Gdansk Bay.",
+    "Landing title contact": "Motorboat cruises around the Gdansk Bay.",
     "Footer copyright": "© 2024 Company Name Gdańsk. All rights reserved.",
     "Write to us": "Write to us",
     "Whare are we": "Whare are we?",
@@ -40,19 +44,34 @@ export const translationsEN = {
       "desc 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consectetur cumque deserunt ea error expedita molestias perferendis quae recusandae rerum?",
     "Welcome 3 description":
       "desc 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consectetur cumque deserunt ea error expedita molestias perferendis quae recusandae rerum?",
+    "Form reservation first title": "Send a booking inquiry",
+    "Form reservation second title":
+      "Suggest us your own ideas for a cruise - we will consider everything",
+    "Form contact first title": "Contact with us",
+    "Form contact second title":
+      "Do you have any questions? Ask them here and we will answer within 24 hours",
+    "Name label": "Name and lastname: ",
+    "Email label": "Email: ",
+    "Phone label": "Phone number: ",
+    "Message label": "Your message: ",
+    "Submit button": "Submit!",
   },
 };
 
 export const translationsPL = {
   translation: {
-    "Welcome to React": "Witaj w React z react-i18next",
-    desc: "to niezly opis",
     "Home page": "Strona główna",
     Reservation: "Zarezerwuj",
     Pricing: "Cennik",
     "Boat specifications": "Specyfikacja łodzi",
+    Specification: "Specyfikacja",
     Contact: "Kontakt",
-    "Home page heading": "Rejsy łodzią motorową po zatoce Gdańskiej",
+    "Landing title main": "Rejsy łodzią motorową po zatoce Gdańskiej",
+    "Landing title reservation": "Zarezerwuj łódź",
+    "Landing title pricing": "Rejsy łodzią motorową po zatoce Gdańskiej",
+    "Landing title boat specification":
+      "Rejsy łodzią motorową po zatoce Gdańskiej",
+    "Landing title contact": "Rejsy łodzią motorową po zatoce Gdańskiej",
     "Footer copyright":
       "© 2024 Nazwa Firmy Gdańsk. Wszelkie prawa zastrzeżone.",
     "Write to us": "Napisz do nas",
@@ -85,5 +104,15 @@ export const translationsPL = {
       "opis 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consectetur cumque deserunt ea error expedita molestias perferendis quae recusandae rerum?",
     "Welcome 3 description":
       "opis 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consectetur cumque deserunt ea error expedita molestias perferendis quae recusandae rerum?",
+    "Form reservation first title": "Wyślij zapytanie rezerwacyjne",
+    "Form reservation second title":
+      "Zaproponuj nam własne pomysły na rejs – wszystko rozważymy",
+    "Form contact first title": "Skontaktuj się z nami",
+    "Form contact second title": "Masz pytania? Zadaj je tutaj odpowiemy w 24h",
+    "Name label": "Imię i nazwisko: ",
+    "Email label": "Email: ",
+    "Phone label": "Numer telefonu: ",
+    "Message label": "Twoja wiadomość: ",
+    "Submit button": "Wyślij!",
   },
 };

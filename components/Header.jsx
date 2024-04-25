@@ -15,9 +15,9 @@ const Header = () => {
   const { t } = useTranslation();
   const links = [
     { link: "/yachting/", text: t("Home page") },
-    { link: "/yachting/contact", text: t("Reservation") },
+    { link: "/yachting/reservation", text: t("Reservation") },
     { link: "/yachting/pricing", text: t("Pricing") },
-    { link: "/yachting/spec", text: t("Boat specifications") },
+    { link: "/yachting/boat_specification", text: t("Boat specifications") },
     { link: "/yachting/contact", text: t("Contact") },
   ];
 
@@ -69,7 +69,7 @@ const Header = () => {
           <ChangeLanguage />
         </Stack>
       </Stack>
-      <MobileHeader open={open} setOpen={setOpen} />
+      <MobileHeader links={links} open={open} setOpen={setOpen} />
     </Stack>
   );
 };

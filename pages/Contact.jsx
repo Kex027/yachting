@@ -1,14 +1,20 @@
-import React from "react";
+import ContactTemplate from "../components/ContactTemplate.jsx";
 import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 
 const Contact = () => {
   const { t } = useTranslation();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div>
-      contact
-      <p>{t("desc")}</p>
-    </div>
+    <ContactTemplate
+      landingTitle={t("Landing title contact")}
+      firstTitle={t("Form contact first title")}
+      secondTitle={t("Form contact second title")}
+    />
   );
 };
 

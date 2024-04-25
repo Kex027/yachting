@@ -77,16 +77,16 @@ const Footer = () => {
           <Link to={"/yachting/"} className={style.link}>
             {t("Home page")}
           </Link>
-          <Link to={"/yachting/"} className={style.link}>
+          <Link to={"/yachting/reservation"} className={style.link}>
             {t("Reservation")}
           </Link>
-          <Link to={"/yachting/"} className={style.link}>
+          <Link to={"/yachting/pricing"} className={style.link}>
             {t("Pricing")}
           </Link>
-          <Link to={"/yachting/"} className={style.link}>
-            {t("Boat specifications")}
+          <Link to={"/yachting/boat_specification"} className={style.link}>
+            {t("Boat specification")}
           </Link>
-          <Link to={"/yachting/"} className={style.link}>
+          <Link to={"/yachting/contact"} className={style.link}>
             {t("Contact")}
           </Link>
         </Stack>

@@ -3,7 +3,7 @@ import { MdClose } from "react-icons/md";
 import NavigationLink from "./NavigationLink.jsx";
 import ChangeLanguage from "./ChangeLanguage.jsx";
 
-const MobileHeader = ({ open, setOpen }) => {
+const MobileHeader = ({ links, open, setOpen }) => {
   return (
     <Drawer
       anchor={"right"}
@@ -25,31 +25,14 @@ const MobileHeader = ({ open, setOpen }) => {
 
         <DialogContent>
           <Stack mr={2} alignItems={"flex-end"} gap={2}>
-            <NavigationLink
-              link={"/yachting/"}
-              translateKey={"Home page"}
-              setOpen={setOpen}
-            />
-            <NavigationLink
-              link={"/yachting/contact"}
-              translateKey={"Reservation"}
-              setOpen={setOpen}
-            />
-            <NavigationLink
-              link={"/yachting/pricing"}
-              translateKey={"Pricing"}
-              setOpen={setOpen}
-            />
-            <NavigationLink
-              link={"/yachting/"}
-              translateKey={"Boat specifications"}
-              setOpen={setOpen}
-            />
-            <NavigationLink
-              link={"/yachting/contact"}
-              translateKey={"Contact"}
-              setOpen={setOpen}
-            />
+            {links.map(({ link, text }) => (
+              <NavigationLink
+                key={text}
+                link={link}
+                translateKey={text}
+                setOpen={setOpen}
+              />
+            ))}
 
             <ChangeLanguage />
           </Stack>

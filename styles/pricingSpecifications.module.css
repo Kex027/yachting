@@ -1,0 +1,25 @@
+.container {
+  color: var(--light-blue);
+}
+
+.content {
+  width: 100%;
+  padding: 2rem 1rem;
+  max-width: var(--max-width-content);
+}
+
+.btn {
+  background-color: var(--secondary);
+  width: 100%;
+}
+
+.btnText {
+  padding: 0 1rem;
+  width: 100%;
+  color: var(--primary);
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #c29f4e;
+}

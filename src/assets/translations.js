@@ -55,6 +55,8 @@ export const translationsEN = {
     "Phone label": "Phone number: ",
     "Message label": "Your message: ",
     "Submit button": "Submit!",
+    "Our pricing": "Our pricing",
+    "Subtitle pricing": "Pricing plan",
   },
 };
 
@@ -114,5 +116,7 @@ export const translationsPL = {
     "Phone label": "Numer telefonu: ",
     "Message label": "Twoja wiadomość: ",
     "Submit button": "Wyślij!",
+    "Our pricing": "Nasz cennik",
+    "Subtitle pricing": "Oferta cenowa",
   },
 };

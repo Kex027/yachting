@@ -45,6 +45,7 @@ const Form = ({ firstTitle = "", secondTitle = "" }) => {
               maxWidth={{ xs: "var(--longest-btn)", md: "100%" }}
             >
               <FormInput
+                type={"text"}
                 label={t("Name label")}
                 register={{ ...register("name") }}
                 required
@@ -86,6 +87,7 @@ const Form = ({ firstTitle = "", secondTitle = "" }) => {
                   slotProps={{
                     textarea: {
                       ...register("message"),
+                      maxLength: 4000,
                     },
                   }}
                 />

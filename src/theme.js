@@ -19,6 +19,20 @@ const theme = extendTheme({
           },
       },
     },
+    JoyTable: {
+      styleOverrides: {
+        root: {
+          textAlign: "center",
+          backgroundColor: "var(--neutral)",
+          color: "var(--primary)",
+          th: {
+            textAlign: "center",
+            color: "var(--primary)",
+            backgroundColor: "var(--secondary)",
+          },
+        },
+      },
+    },
   },
 });
 

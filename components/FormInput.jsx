@@ -2,7 +2,7 @@ import style from "../styles/form.module.css";
 import { FormLabel, Input, Stack } from "@mui/joy";
 import MotionSection from "./MotionSection.jsx";
 
-const FormInput = ({ label, register, required = false }) => {
+const FormInput = ({ label, register, required = false, max = 50 }) => {
   return (
     <Stack gap={1} className={style.inputWrapper}>
       <MotionSection>
@@ -21,7 +21,10 @@ const FormInput = ({ label, register, required = false }) => {
           color={"primary"}
           required={required}
           slotProps={{
-            input: register,
+            input: {
+              ...register,
+              maxLength: max,
+            },
           }}
         />
       </MotionSection>

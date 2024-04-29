@@ -8,7 +8,15 @@
   max-width: var(--max-width-content);
 }
 
+.header {
+  color: var(--primary);
+}
+
 .img {
   object-fit: contain;
   width: 100%;
+}
+
+.cardText {
+  color: var(--neutral);
 }

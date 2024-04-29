@@ -57,6 +57,19 @@ export const translationsEN = {
     "Submit button": "Submit!",
     "Our pricing": "Our pricing",
     "Subtitle pricing": "Pricing plan",
+    Gallery: "Gallery",
+    "Planning cruise": "Planning cruise",
+    "Description planning cruise":
+      "Route Selection\n" +
+      "Define Your Destination: Determine the purpose of your trip, whether it's vacation, business travel, or a family outing.\n" +
+      "Choose the Optimal Route: Consider distance, road conditions, and local attractions.\n" +
+      "Map Your Route: Use apps or online maps, and ensure you have an offline version.\n" +
+      "Schedule\n" +
+      "Travel Time: Set departure and arrival times, factoring in stops.\n" +
+      "Flexibility: Prepare backup plans for unforeseen circumstances.\n" +
+      "Safety\n" +
+      "Check Road Conditions: Review warnings and traffic regulations.\n" +
+      "Emergency Equipment: Make sure you have a first aid kit and necessary tools.\n",
   },
 };
 
@@ -118,5 +131,18 @@ export const translationsPL = {
     "Submit button": "Wyślij!",
     "Our pricing": "Nasz cennik",
     "Subtitle pricing": "Oferta cenowa",
+    Gallery: "Galeria",
+    "Planning cruise": "Planowanie Trasy",
+    "Description planning cruise":
+      "Wybór Trasy\n" +
+      "Określenie Celu: Zdefiniuj cel podróży, czy to wakacje, podróż służbowa czy rodzinna wycieczka.\n" +
+      "Wybór Optymalnej Trasy: Rozważ dystans, warunki drogowe i atrakcje lokalne.\n" +
+      "Mapa Trasy: Skorzystaj z aplikacji lub map online, zapewnij także wersję offline.\n" +
+      "Harmonogram\n" +
+      "Czas Podróży: Ustal godziny startu i przyjazdu, uwzględniając przystanki.\n" +
+      "Elastyczność: Przygotuj plany zapasowe na wypadek nieprzewidzianych sytuacji.\n" +
+      "Bezpieczeństwo\n" +
+      "Sprawdź Warunki Drogowe: Przeglądaj ostrzeżenia i przepisy drogowe.\n" +
+      "Wyposażenie Awaryjne: Upewnij się, że masz apteczkę i niezbędne narzędzia.",
   },
 };

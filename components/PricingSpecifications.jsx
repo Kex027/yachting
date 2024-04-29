@@ -29,7 +29,6 @@ const PricingSpecifications = () => {
             <h2 className={style.title}>{t("Subtitle pricing")}</h2>
           </MotionSection>
         </Stack>
-
         <Table className={style.table} variant={"solid"}>
           <thead>
             <tr>
@@ -65,7 +64,6 @@ const PricingSpecifications = () => {
             ))}
           </tbody>
         </Table>
-
         <button className={`${style.btn} btn bold`}>
           <MotionButton>
             <span className={`mediumLetterSpacing ${style.btnText}`}>
@@ -73,6 +71,11 @@ const PricingSpecifications = () => {
             </span>
           </MotionButton>
         </button>
+
+        <Stack gap={2} textAlign={"center"} lineHeight={2}>
+          <h2>{t("Planning cruise")}</h2>
+          <p>{t("Description planning cruise")}</p>
+        </Stack>
       </Stack>
     </Stack>
   );

@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import MotionSection from "./MotionSection.jsx";
+import { useTranslation } from "react-i18next";
 
 const Arrow = (props) => {
   const { className, style, onClick } = props;
@@ -22,6 +23,7 @@ const Arrow = (props) => {
 };
 
 const PricingCarousel = () => {
+  const { t } = useTranslation();
   const settings = {
     dots: true,
     adaptiveHeight: true,
@@ -75,7 +77,9 @@ const PricingCarousel = () => {
         alignItems={"center"}
         mt={{ md: "1rem" }}
         mb={{ md: "1rem" }}
+        gap={2}
       >
+        <h1 className={style.header}>{t("Gallery")?.toUpperCase()}</h1>
         <Slider {...settings} className="slider-container">
           {slides.map(({ img, text }, index) => (
             <Card
@@ -100,7 +104,7 @@ const PricingCarousel = () => {
                 }}
               >
                 <MotionSection>
-                  <p>{text}</p>
+                  <p className={style.cardText}>{text}</p>
                 </MotionSection>
               </CardContent>
             </Card>

@@ -5,7 +5,11 @@ import LandingButtons from "./LandingButtons.jsx";
 
 const LandingPage = ({ text, buttons = [] }) => {
   return (
-    <Stack className={style.container} justifyContent={"center"} gap={2}>
+    <Stack
+      className={`${style.container} sectionInsetShadow`}
+      justifyContent={"center"}
+      gap={2}
+    >
       <LandingTitle text={text} />
       <LandingButtons buttons={buttons} />
     </Stack>

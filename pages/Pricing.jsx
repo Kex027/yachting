@@ -3,6 +3,7 @@ import LandingPage from "../components/LandingPage.jsx";
 import { Stack } from "@mui/joy";
 import { useTranslation } from "react-i18next";
 import PricingSpecifications from "../components/PricingSpecifications.jsx";
+import PricingCarousel from "../components/PricingCarousel.jsx";
 
 const Pricing = () => {
   const { t } = useTranslation();
@@ -25,6 +26,7 @@ const Pricing = () => {
       />
 
       <PricingSpecifications />
+      <PricingCarousel />
     </Stack>
   );
 };

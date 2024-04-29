@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Stack, Table } from "@mui/joy";
 import style from "../styles/pricingSpecifications.module.css";
 import MotionButton from "./MotionButton.jsx";
+import MotionSection from "./MotionSection.jsx";
 
 const PricingSpecifications = () => {
   const { t } = useTranslation();
@@ -15,21 +16,32 @@ const PricingSpecifications = () => {
   ];
 
   return (
-    <Stack className={style.container} alignItems={"center"}>
+    <Stack
+      className={`${style.container} sectionInsetShadow`}
+      alignItems={"center"}
+    >
       <Stack className={style.content} alignItems={"center"} gap={2}>
         <Stack alignItems={"center"}>
-          <h1>{t("Our pricing")}</h1>
-          <h2>{t("Subtitle pricing")}</h2>
+          <MotionSection>
+            <h1 className={style.title}>{t("Our pricing")}</h1>
+          </MotionSection>
+          <MotionSection>
+            <h2 className={style.title}>{t("Subtitle pricing")}</h2>
+          </MotionSection>
         </Stack>
 
         <Table className={style.table} variant={"solid"}>
-          <thead className={style.tableHead}>
+          <thead>
             <tr>
-              <th>Czas najmu</th>
-              <th>Cena</th>
+              <th>
+                <MotionSection>Czas najmu</MotionSection>
+              </th>
+              <th>
+                <MotionSection>Cena</MotionSection>
+              </th>
             </tr>
           </thead>
-          <tbody className={style.tableBody}>
+          <tbody>
             {rows.map(({ text, price }, index) => (
               <tr
                 key={text}
@@ -37,8 +49,18 @@ const PricingSpecifications = () => {
                   backgroundColor: index % 2 === 0 && "var(--neutral-2)",
                 }}
               >
-                <td>{text}</td>
-                <td>{price * (index + 1)} zł</td>
+                <td>
+                  <MotionSection>
+                    <Stack alignItems={"center"}>{text}</Stack>
+                  </MotionSection>
+                </td>
+                <td>
+                  <MotionSection>
+                    <Stack alignItems={"center"}>
+                      {price * (index + 1)} zł
+                    </Stack>
+                  </MotionSection>
+                </td>
               </tr>
             ))}
           </tbody>

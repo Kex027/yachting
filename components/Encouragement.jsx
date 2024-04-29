@@ -18,6 +18,9 @@ const Encouragement = () => {
       <Stack
         className={`${style.content}`}
         gap={2}
+        sx={{
+          boxShadow: { xs: "inset 0 -8px 18px -6px rgb(0, 0, 0)", md: "none" },
+        }}
         width={{ xs: "100%", md: "50%" }}
       >
         <MotionSection>
@@ -41,11 +44,12 @@ const Encouragement = () => {
       </Stack>
       <video
         width={"100%"}
+        height={"100%"}
         autoPlay
         muted
         loop
         playsInline
-        style={{ zIndex: -1 }}
+        style={{ zIndex: -1, objectFit: "cover" }}
       >
         <source src={yachtSwimming} type={"video/mp4"} />
       </video>

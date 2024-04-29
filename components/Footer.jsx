@@ -7,6 +7,7 @@ import { CiMail } from "react-icons/ci";
 import { BsTelephone } from "react-icons/bs";
 import { FaCity, FaRegAddressBook } from "react-icons/fa";
 import style from "../styles/footer.module.css";
+import MotionButton from "./MotionButton.jsx";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -73,22 +74,32 @@ const Footer = () => {
           </Stack>
         </Stack>
 
-        <Stack gap={2} alignItems={"center"} textAlign={"center"}>
-          <Link to={"/yachting/"} className={style.link}>
-            {t("Home page")}
-          </Link>
-          <Link to={"/yachting/reservation"} className={style.link}>
-            {t("Reservation")}
-          </Link>
-          <Link to={"/yachting/pricing"} className={style.link}>
-            {t("Pricing")}
-          </Link>
-          <Link to={"/yachting/boat_specification"} className={style.link}>
-            {t("Boat specification")}
-          </Link>
-          <Link to={"/yachting/contact"} className={style.link}>
-            {t("Contact")}
-          </Link>
+        <Stack gap={2} alignItems={"center"} textAlign={"center"} p={1}>
+          <MotionButton>
+            <Link to={"/yachting/"} className={style.link}>
+              {t("Home page")}
+            </Link>
+          </MotionButton>
+          <MotionButton>
+            <Link to={"/yachting/reservation"} className={style.link}>
+              {t("Reservation")}
+            </Link>
+          </MotionButton>
+          <MotionButton>
+            <Link to={"/yachting/pricing"} className={style.link}>
+              {t("Pricing")}
+            </Link>
+          </MotionButton>
+          <MotionButton>
+            <Link to={"/yachting/boat_specification"} className={style.link}>
+              {t("Boat specification")}
+            </Link>
+          </MotionButton>
+          <MotionButton>
+            <Link to={"/yachting/contact"} className={style.link}>
+              {t("Contact")}
+            </Link>
+          </MotionButton>
         </Stack>
       </Stack>
 

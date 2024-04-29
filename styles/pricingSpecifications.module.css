@@ -8,9 +8,19 @@
   max-width: var(--max-width-content);
 }
 
+.title {
+  padding: 0 1rem;
+}
+
+.table {
+  margin: 1rem;
+  box-shadow: 0 0 10px #000000;
+}
+
 .btn {
   background-color: var(--secondary);
   width: 100%;
+  box-shadow: 0 0 10px #000000;
 }
 
 .btnText {

@@ -21,7 +21,7 @@ const Form = ({ firstTitle = "", secondTitle = "" }) => {
       className={`${style.container} sectionInsetShadow`}
       alignItems={"center"}
     >
-      <Stack className={style.content} gap={2}>
+      <Stack className={"content"} gap={2}>
         <Stack>
           <MotionSection>
             <h1>{firstTitle?.toUpperCase()}</h1>

@@ -20,7 +20,7 @@ const PricingSpecifications = () => {
       className={`${style.container} sectionInsetShadow`}
       alignItems={"center"}
     >
-      <Stack className={style.content} alignItems={"center"} gap={2}>
+      <Stack className={"content"} alignItems={"center"} gap={2}>
         <Stack alignItems={"center"}>
           <MotionSection>
             <h1 className={style.title}>{t("Our pricing")}</h1>

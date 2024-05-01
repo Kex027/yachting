@@ -3,10 +3,7 @@
 }
 
 .content {
-  width: 100%;
-  padding: 2rem 1rem;
   letter-spacing: var(--wide-letter-spacing);
-  max-width: var(--max-width-content);
 }
 
 .logo {

@@ -19,7 +19,7 @@ const WelcomeTo = () => {
       alignItems={"center"}
       className={`${style.container} sectionInsetShadow`}
     >
-      <Stack className={style.content} gap={2}>
+      <Stack className={`${style.content} content`} gap={2}>
         <MotionSection>
           <ColorDivider color={"var(--primary)"}>
             {t("Explore & chill with us")}

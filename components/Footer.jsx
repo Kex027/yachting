@@ -17,7 +17,7 @@ const Footer = () => {
       <Stack
         alignItems={"center"}
         gap={{ xs: 4, sm: 2 }}
-        className={style.content}
+        className={`${style.content} content`}
         direction={{ md: "row" }}
         justifyContent={{ sm: "space-between" }}
       >

@@ -10,7 +10,7 @@ const CheckOutUs = () => {
 
   return (
     <Stack className={"sectionInsetShadow"} alignItems={"center"}>
-      <Stack className={style.content} gap={2} mb={{ md: 4 }}>
+      <Stack className={"content"} gap={2} mb={{ md: 4 }}>
         <MotionSection>
           <ColorDivider>{t("Do you have questions")}</ColorDivider>
         </MotionSection>

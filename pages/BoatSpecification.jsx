@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Stack } from "@mui/joy";
 import LandingPage from "../components/LandingPage.jsx";
+import BoatSpecificationsGallery from "../components/BoatSpecificationsGallery.jsx";
 
 const BoatSpecification = () => {
   const { t } = useTranslation();
@@ -13,7 +14,7 @@ const BoatSpecification = () => {
   return (
     <Stack>
       <LandingPage
-        text={t("Boat specifications")}
+        text={t("Our boat")}
         buttons={[
           { text: t("Reservation"), link: "/yachting/reservation" },
           {
@@ -22,6 +23,8 @@ const BoatSpecification = () => {
           },
         ]}
       />
+
+      <BoatSpecificationsGallery />
     </Stack>
   );
 };

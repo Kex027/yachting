@@ -70,6 +70,8 @@ export const translationsEN = {
       "Safety\n" +
       "Check Road Conditions: Review warnings and traffic regulations.\n" +
       "Emergency Equipment: Make sure you have a first aid kit and necessary tools.\n",
+    "Our boat": "Our boat",
+    "See our boat": "Look at our Solano 27 up close",
   },
 };
 
@@ -144,5 +146,7 @@ export const translationsPL = {
       "Bezpieczeństwo\n" +
       "Sprawdź Warunki Drogowe: Przeglądaj ostrzeżenia i przepisy drogowe.\n" +
       "Wyposażenie Awaryjne: Upewnij się, że masz apteczkę i niezbędne narzędzia.",
+    "Our boat": "Nasza łódź",
+    "See our boat": "Obejrzyj nasze Solano 27 z bliska",
   },
 };

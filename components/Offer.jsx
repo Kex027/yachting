@@ -13,7 +13,7 @@ const Offer = () => {
       className={`${style.container} sectionInsetShadow`}
       alignItems={"center"}
     >
-      <Stack className={style.content} gap={4}>
+      <Stack className={`${style.content} content`} gap={4}>
         <Stack
           direction={"row"}
           justifyContent={"space-between"}

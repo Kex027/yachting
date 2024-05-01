@@ -5,3 +5,14 @@
 .content {
   color: var(--primary);
 }
+
+.gallery {
+  overflow: hidden;
+  padding: .5rem;
+}
+
+.img {
+  max-width: 215px;
+}
+
+

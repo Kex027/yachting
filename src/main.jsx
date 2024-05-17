@@ -14,27 +14,27 @@ import Contact from "../pages/Contact.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/yachting/",
+    path: "/",
     element: <App />,
     children: [
       {
-        path: "/yachting/",
+        path: "/",
         element: <MainPage />,
       },
       {
-        path: "/yachting/reservation/",
+        path: "/reservation/",
         element: <Reservation />,
       },
       {
-        path: "/yachting/pricing/",
+        path: "/pricing/",
         element: <Pricing />,
       },
       {
-        path: "/yachting/boat_specification",
+        path: "/boat_specification",
         element: <BoatSpecification />,
       },
       {
-        path: "/yachting/contact/",
+        path: "/contact/",
         element: <Contact />,
       },
     ],

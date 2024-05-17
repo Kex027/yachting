@@ -9,9 +9,9 @@ import MotionSection from "./MotionSection.jsx";
 const WelcomeTo = () => {
   const { t } = useTranslation();
   const cards = [
-    { imgUrl: "/yachting/mainPageYacht.jpg", icon: <FaClock /> },
-    { imgUrl: "/yachting/mainPageYacht.jpg", icon: <FaClock /> },
-    { imgUrl: "/yachting/mainPageYacht.jpg", icon: <FaClock /> },
+    { imgUrl: "/mainPageYacht.jpg", icon: <FaClock /> },
+    { imgUrl: "/mainPageYacht.jpg", icon: <FaClock /> },
+    { imgUrl: "/mainPageYacht.jpg", icon: <FaClock /> },
   ];
 
   return (

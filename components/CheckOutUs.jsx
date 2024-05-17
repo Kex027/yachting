@@ -27,9 +27,9 @@ const CheckOutUs = () => {
         >
           <Tile
             text={t("Boat data")?.toUpperCase()}
-            link={"/yachting/boat_specification"}
+            link={"/boat_specification"}
           />
-          <Tile text={t("Contact")?.toUpperCase()} link={"/yachting/contact"} />
+          <Tile text={t("Contact")?.toUpperCase()} link={"/contact"} />
         </Stack>
       </Stack>
     </Stack>

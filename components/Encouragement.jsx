@@ -38,7 +38,7 @@ const Encouragement = () => {
             soluta sunt tempore vitae.
           </Box>
         </MotionSection>
-        <Link to={"/yachting/"} className={`goldText ${style.link}`}>
+        <Link to={"/"} className={`goldText ${style.link}`}>
           <MotionSection>{t("Check out")}</MotionSection>
         </Link>
       </Stack>

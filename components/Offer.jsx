@@ -42,20 +42,14 @@ const Offer = () => {
           ))}
         </Stack>
         <Stack direction={"row"} justifyContent={"center"} p={{ md: 2 }}>
-          <Link
-            className={`noDecoration btn leftBtn btn-landing`}
-            to={"/yachting/"}
-          >
+          <Link className={`noDecoration btn leftBtn btn-landing`} to={"/"}>
             <MotionButton>
               <Stack justifyContent={"center"} alignItems={"center"}>
                 {t("Pricing").toUpperCase()}
               </Stack>
             </MotionButton>
           </Link>
-          <Link
-            className={`noDecoration btn rightBtn btn-landing`}
-            to={"/yachting/"}
-          >
+          <Link className={`noDecoration btn rightBtn btn-landing`} to={"/"}>
             <MotionButton>
               <Stack justifyContent={"center"} alignItems={"center"}>
                 {t("Reservation").toUpperCase()}

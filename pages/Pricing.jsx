@@ -17,10 +17,10 @@ const Pricing = () => {
       <LandingPage
         text={t("Pricing")}
         buttons={[
-          { text: t("Reservation"), link: "/yachting/reservation" },
+          { text: t("Reservation"), link: "/reservation" },
           {
             text: t("Specification"),
-            link: "/yachting/boat_specification",
+            link: "/boat_specification",
           },
         ]}
       />

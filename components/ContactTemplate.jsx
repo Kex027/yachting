@@ -11,10 +11,10 @@ const ContactTemplate = ({ landingTitle = "", firstTitle, secondTitle }) => {
       <LandingPage
         text={landingTitle}
         buttons={[
-          { text: t("Pricing"), link: "/yachting/pricing" },
+          { text: t("Pricing"), link: "/pricing" },
           {
             text: t("Specification"),
-            link: "/yachting/boat_specification",
+            link: "/boat_specification",
           },
         ]}
       />

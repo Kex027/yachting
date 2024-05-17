@@ -14,11 +14,11 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
   const links = [
-    { link: "/yachting/", text: t("Home page") },
-    { link: "/yachting/reservation", text: t("Reservation") },
-    { link: "/yachting/pricing", text: t("Pricing") },
-    { link: "/yachting/boat_specification", text: t("Boat specifications") },
-    { link: "/yachting/contact", text: t("Contact") },
+    { link: "/", text: t("Home page") },
+    { link: "/reservation", text: t("Reservation") },
+    { link: "/pricing", text: t("Pricing") },
+    { link: "/boat_specification", text: t("Boat specifications") },
+    { link: "/contact", text: t("Contact") },
   ];
 
   return (
@@ -29,7 +29,7 @@ const Header = () => {
         justifyContent={"space-between"}
         alignItems={"center"}
       >
-        <Link to={"/yachting/"}>
+        <Link to={"/"}>
           <img src={viteLogo} alt="vite logo" className={style.logo} />
         </Link>
 

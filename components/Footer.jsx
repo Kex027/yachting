@@ -76,27 +76,27 @@ const Footer = () => {
 
         <Stack gap={2} alignItems={"center"} textAlign={"center"} p={1}>
           <MotionButton>
-            <Link to={"/yachting/"} className={style.link}>
+            <Link to={"/"} className={style.link}>
               {t("Home page")}
             </Link>
           </MotionButton>
           <MotionButton>
-            <Link to={"/yachting/reservation"} className={style.link}>
+            <Link to={"/reservation"} className={style.link}>
               {t("Reservation")}
             </Link>
           </MotionButton>
           <MotionButton>
-            <Link to={"/yachting/pricing"} className={style.link}>
+            <Link to={"/pricing"} className={style.link}>
               {t("Pricing")}
             </Link>
           </MotionButton>
           <MotionButton>
-            <Link to={"/yachting/boat_specification"} className={style.link}>
+            <Link to={"/boat_specification"} className={style.link}>
               {t("Boat specification")}
             </Link>
           </MotionButton>
           <MotionButton>
-            <Link to={"/yachting/contact"} className={style.link}>
+            <Link to={"/contact"} className={style.link}>
               {t("Contact")}
             </Link>
           </MotionButton>

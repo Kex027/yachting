@@ -18,8 +18,8 @@ const MainPage = () => {
       <LandingPage
         text={t("Landing title main")}
         buttons={[
-          { text: t("Pricing"), link: "/yachting/pricing" },
-          { text: t("Reservation"), link: "/yachting/reservation" },
+          { text: t("Pricing"), link: "/pricing" },
+          { text: t("Reservation"), link: "/reservation" },
         ]}
       />
       <Encouragement />

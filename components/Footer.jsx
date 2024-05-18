@@ -1,4 +1,3 @@
-import viteLogo from "/vite.svg";
 import { Stack } from "@mui/joy";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -22,9 +21,9 @@ const Footer = () => {
         justifyContent={{ sm: "space-between" }}
       >
         <Stack gap={4} textAlign={"center"}>
-          <img src={viteLogo} alt="vite logo" className={style.logo} />
+          <img src={"/logo.svg"} alt="logo" className={style.logo} />
 
-          <h2>NAZWA FIRMY</h2>
+          <h2>WESTMAR</h2>
         </Stack>
 
         <Stack

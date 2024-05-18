@@ -167,7 +167,7 @@ const PricingCarousel = () => {
                     }}
                   >
                     <MotionSection>
-                      <h2>{title}</h2>
+                      <h2 className={style.cardText}>{title}</h2>
                       <p className={style.cardText}>{text}</p>
                     </MotionSection>
                   </CardContent>

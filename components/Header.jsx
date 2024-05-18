@@ -1,6 +1,5 @@
 import { Button, Stack } from "@mui/joy";
 import { IoMenu } from "react-icons/io5";
-import viteLogo from "/vite.svg";
 import { Link, NavLink } from "react-router-dom";
 import MobileHeader from "./MobileHeader.jsx";
 import style from "../styles/header.module.css";
@@ -30,7 +29,7 @@ const Header = () => {
         alignItems={"center"}
       >
         <Link to={"/"}>
-          <img src={viteLogo} alt="vite logo" className={style.logo} />
+          <img src={"/logo.svg"} alt="logo" className={style.logo} />
         </Link>
 
         <Button

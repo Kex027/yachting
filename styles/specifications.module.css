@@ -1,0 +1,72 @@
+.container {
+  background-color: var(--neutral);
+}
+
+.content {
+  color: var(--primary);
+}
+
+.img {
+  width: 100%;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.leftSpec {
+  width: 60%;
+  left: 0;
+
+  border-right: 1px solid var(--primary);
+}
+
+.rightSpec {
+  width: 40%;
+  right: 0;
+
+  border-left: 1px solid var(--primary);
+}
+
+.leftSpec, .rightSpec {
+  cursor: pointer;
+
+  position: absolute;
+  height: 100%;
+}
+
+.leftSpec:hover, .rightSpec:hover {
+  opacity: 25%;
+  background-color: var(--neutral);
+}
+
+.box {
+  width: 9rem;
+  min-height: 9rem;
+  background-color: var(--primary);
+  color: var(--neutral);
+  padding: 1rem;
+
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: var(--secondary);
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  overflow: visible;
+}
+
+.icon {
+  color: var(--primary);
+  font-size: 2rem;
+}
+
+.title {
+  color: var(--secondary);
+}
+
+.centered {
+  text-align: center;
+}

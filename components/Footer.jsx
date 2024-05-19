@@ -21,7 +21,7 @@ const Footer = () => {
         justifyContent={{ sm: "space-between" }}
       >
         <Stack gap={4} textAlign={"center"}>
-          <img src={"/logo.svg"} alt="logo" className={style.logo} />
+          <img src={"/logo.webp"} alt="logo" className={style.logo} />
 
           <h2>WESTMAR</h2>
         </Stack>

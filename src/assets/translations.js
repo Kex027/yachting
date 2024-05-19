@@ -103,6 +103,18 @@ export const translationsEN = {
     "Gdansk description":
       "The greatest attraction of kaszuby’s capital, beautifully ornamented tenements spanning along the streets across the entire old town. Historical monuments, likes of Mariacki Church, żuraw crane or Artus’s Manor nearby the famous Neptune statue located on the Długa street. The area is filled with many cuisine restaurants making sure you will satisfy your needs. For the history savvy there’s world class museums like, II World War Museum, European Solidarity Center (Europejskie Centrum Solidarności) or the Amber Museum.",
     "Westerplatte description": "",
+    Length: "Length",
+    Weight: "Weight",
+    "Engine power": "Engine power",
+    "Max velocity": "Engine power",
+    "0-15 knots": "Engine power",
+    "0-35 knots": "Engine power",
+    knots: "knots",
+    "Cabin for two": "Cabin with a double bed",
+    "Spacious restroom": "Spacious restroom",
+    "USB ports": "USB ports",
+    "Bluetooth sound system": "Bluetooth sound system",
+    "Aft deck": "Aft deck with comfortable access to the water",
   },
 };
 
@@ -210,5 +222,17 @@ export const translationsPL = {
     "Gdansk description":
       "Największa atrakcja stolicy kaszub, pięknie zdobione kamienice biegnące wzdłuż ulic na całym obszarze starówki. Historyczne zabytki, takie jak Bazylika Mariacka, żuraw czy Dwór Artusa pod słynnym Neptunem na ulicy Długiej. Okolica pękająca od ilości lokali gastronomicznych, zaspokajając każde gusta.  Dla chętnych poszerzenia wiedzy, Muzeum II Wojny Światowej, Europejskie Centrum Solidarności czy Muzeum Bursztynu.",
     "Westerplatte description": "",
+    Length: "Długość",
+    Weight: "Waga",
+    "Engine power": "Moc silnika",
+    "Max velocity": "Prędkość maksymalna",
+    "0-15 knots": "0-15 węzłów",
+    "0-35 knots": "0-35 węzłów",
+    knots: "węzłów",
+    "Cabin for two": "Kabina z łóżkiem dla dwóch osób",
+    "Spacious restroom": "Przestronna toaleta",
+    "USB ports": "Gniazda USB",
+    "Bluetooth sound system": "Nagłośnienie bluetooth",
+    "Aft deck": "Tylny pokład z wygodnym zejściem do wody",
   },
 };

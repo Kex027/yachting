@@ -54,7 +54,7 @@ const BoatSpecificationsGallery = () => {
               }}
               whileInView={{ opacity: 1 }}
               whileHover={{
-                filter: "brightness(.5)",
+                filter: "brightness(.75)",
                 transform: "scale(1.05)",
                 cursor: "pointer",
               }}

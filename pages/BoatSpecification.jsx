@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Stack } from "@mui/joy";
 import LandingPage from "../components/LandingPage.jsx";
 import BoatSpecificationsGallery from "../components/BoatSpecificationsGallery.jsx";
+import Specifications from "../components/Specifications.jsx";
 
 const BoatSpecification = () => {
   const { t } = useTranslation();
@@ -25,6 +26,7 @@ const BoatSpecification = () => {
       />
 
       <BoatSpecificationsGallery />
+      <Specifications />
     </Stack>
   );
 };

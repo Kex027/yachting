@@ -29,7 +29,7 @@ const Header = () => {
         alignItems={"center"}
       >
         <Link to={"/"}>
-          <img src={"/logo.svg"} alt="logo" className={style.logo} />
+          <img src={"/logo.webp"} alt="logo" className={style.logo} />
         </Link>
 
         <Button

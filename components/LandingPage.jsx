@@ -8,10 +8,13 @@ const LandingPage = ({ text, buttons = [] }) => {
     <Stack
       className={`${style.container} sectionInsetShadow`}
       justifyContent={"center"}
+      alignItems={"center"}
       gap={2}
     >
-      <LandingTitle text={text} />
-      <LandingButtons buttons={buttons} />
+      <Stack className={"content"} gap={{ xs: 2, md: 0 }}>
+        <LandingTitle text={text} />
+        <LandingButtons buttons={buttons} />
+      </Stack>
     </Stack>
   );
 };

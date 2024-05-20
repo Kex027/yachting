@@ -1,5 +1,9 @@
-.content {
+.container {
   position: absolute;
+
+}
+
+.content {
   height: 3.5rem;
   width: 100%;
   max-width: var(--max-width-content);

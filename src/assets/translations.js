@@ -49,7 +49,7 @@ export const translationsEN = {
       "Suggest us your own ideas for a cruise - we will consider everything",
     "Form contact first title": "Contact with us",
     "Form contact second title":
-      "Do you have any questions? Ask them here and we will answer within 24 hours",
+      "Do you have any questions? Ask them here and we will answer within 24 hours!",
     "Name label": "Name and lastname: ",
     "Email label": "Email: ",
     "Phone label": "Phone number: ",
@@ -168,7 +168,8 @@ export const translationsPL = {
     "Form reservation second title":
       "Zaproponuj nam własne pomysły na rejs – wszystko rozważymy",
     "Form contact first title": "Skontaktuj się z nami",
-    "Form contact second title": "Masz pytania? Zadaj je tutaj odpowiemy w 24h",
+    "Form contact second title":
+      "Masz pytania? Zadaj je tutaj, odpowiemy w 24h!",
     "Name label": "Imię i nazwisko: ",
     "Email label": "Email: ",
     "Phone label": "Numer telefonu: ",

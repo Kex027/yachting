@@ -7,7 +7,8 @@ const Card = ({ title, description, imgUrl, icon }) => {
     <Stack
       className={style.container}
       sx={{
-        backgroundImage: `url('${imgUrl}')`,
+        background: `linear-gradient(rgba(0, 0, 0, .3),rgba(0, 0, 0, 0.5)), no-repeat center url('${imgUrl}')`,
+        backgroundSize: "cover",
       }}
       alignItems={"center"}
       gap={2}
@@ -20,6 +21,8 @@ const Card = ({ title, description, imgUrl, icon }) => {
         </h1>
         <p>{description}</p>
       </MotionSection>
+
+      <div className={style.overlay}></div>
     </Stack>
   );
 };

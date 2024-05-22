@@ -15,6 +15,7 @@ import {
 } from "react-icons/fa";
 import { PiEngineFill } from "react-icons/pi";
 import { IoIosSpeedometer } from "react-icons/io";
+import { BiSolidFridge } from "react-icons/bi";
 
 const Specifications = () => {
   const { t } = useTranslation();
@@ -58,34 +59,34 @@ const Specifications = () => {
       icon: <FaWind />,
     },
     {
-      title: t("Cabin for two"),
-      text: "",
+      text: t("Cabin for two"),
       condition: showFirstSpec,
       icon: <FaBed />,
     },
     {
-      title: t("Spacious restroom"),
-      text: "",
+      text: t("Spacious restroom"),
       condition: showFirstSpec,
       icon: <FaToilet />,
     },
     {
-      title: t("USB ports"),
-      text: "",
+      text: t("USB ports"),
       condition: showFirstSpec,
       icon: <FaUsb />,
     },
     {
-      title: t("Bluetooth sound system"),
-      text: "",
+      text: t("Bluetooth sound system"),
       condition: showFirstSpec,
       icon: <FaBluetooth />,
     },
     {
-      title: t("Aft deck"),
-      text: "",
+      text: t("Aft deck"),
       condition: showFirstSpec,
       icon: <FaDoorClosed />,
+    },
+    {
+      text: t("Fridge sink"),
+      condition: showFirstSpec,
+      icon: <BiSolidFridge />,
     },
   ];
 
@@ -101,13 +102,23 @@ const Specifications = () => {
         mb={{ md: "1rem" }}
         gap={2}
       >
+        <Stack
+          direction={"row"}
+          justifyContent={"space-around"}
+          width={"90%"}
+          alignSelf={"flex-end"}
+          sx={{ fontSize: { md: "2rem" } }}
+        >
+          <h3>{t("Equipment")}</h3>
+          <h3>{t("Specification")}</h3>
+        </Stack>
         <Box className={style.wrapper}>
           <Box
-            className={style.leftSpec}
+            className={`${style.leftSpec} ${showFirstSpec && style.checked}`}
             onClick={() => setShowFirstSpec(true)}
           />
           <Box
-            className={style.rightSpec}
+            className={`${style.rightSpec} ${!showFirstSpec && style.checked}`}
             onClick={() => setShowFirstSpec(false)}
           />
           <img
@@ -123,15 +134,19 @@ const Specifications = () => {
           justifyContent={"center"}
           gap={0.25}
         >
-          {details?.map(({ title, text, condition, icon }) => (
-            <SpecBox
-              key={title}
-              title={title}
-              condition={condition}
-              text={text}
-              icon={icon}
-            />
-          ))}
+          {details?.map(({ title = "", text, condition, icon }, index) => {
+            return (
+              condition && (
+                <SpecBox
+                  key={index}
+                  title={title}
+                  condition={condition}
+                  text={text}
+                  icon={icon}
+                />
+              )
+            );
+          })}
         </Stack>
       </Stack>
     </Stack>

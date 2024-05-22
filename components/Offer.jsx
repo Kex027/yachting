@@ -20,16 +20,19 @@ const Offer = () => {
           alignItems={"center"}
         >
           <h1 className={"underline"}>{t("Offer")}</h1>
-          <button className={`${style.btn} btn bold`}>
+          <Link
+            className={`${style.btn} btn bold noDecoration`}
+            to={"/reservation"}
+          >
             <MotionButton>
               <Stack>
-                <span className={"mediumLetterSpacing"}>
+                <span className={`mediumLetterSpacing ${style.textCenter}`}>
                   {t("Call")?.toUpperCase()}
                 </span>
-                <span>+48 123 123 123</span>
+                <span className={style.textCenter}>+48 123 123 123</span>
               </Stack>
             </MotionButton>
-          </button>
+          </Link>
         </Stack>
         <Stack
           flexWrap={"wrap"}
@@ -42,16 +45,36 @@ const Offer = () => {
           ))}
         </Stack>
         <Stack direction={"row"} justifyContent={"center"} p={{ md: 2 }}>
-          <Link className={`noDecoration btn leftBtn btn-landing`} to={"/"}>
+          <Link
+            className={`noDecoration btn leftBtn btn-landing`}
+            to={"/pricing"}
+            style={{
+              width: "var(--longest-btn)",
+            }}
+          >
             <MotionButton>
-              <Stack justifyContent={"center"} alignItems={"center"}>
+              <Stack
+                justifyContent={"center"}
+                alignItems={"center"}
+                letterSpacing={{ sm: "var(--wide-letter-spacing)" }}
+              >
                 {t("Pricing").toUpperCase()}
               </Stack>
             </MotionButton>
           </Link>
-          <Link className={`noDecoration btn rightBtn btn-landing`} to={"/"}>
+          <Link
+            className={`noDecoration btn rightBtn btn-landing`}
+            to={"/reservation"}
+            style={{
+              width: "var(--longest-btn)",
+            }}
+          >
             <MotionButton>
-              <Stack justifyContent={"center"} alignItems={"center"}>
+              <Stack
+                justifyContent={"center"}
+                alignItems={"center"}
+                letterSpacing={{ sm: "var(--wide-letter-spacing)" }}
+              >
                 {t("Reservation").toUpperCase()}
               </Stack>
             </MotionButton>

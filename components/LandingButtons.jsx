@@ -7,12 +7,15 @@ const LandingButtons = ({ buttons = [] }) => {
     <Stack
       direction={"row"}
       justifyContent={"center"}
-      p={{ md: 2 }}
+      maxWidth={"var(--max-w)"}
       letterSpacing={{ sm: "var(--wide-letter-spacing)" }}
     >
       <Link
         className={`noDecoration btn leftBtn btn-landing`}
         to={buttons[0]?.link}
+        style={{
+          width: "var(--longest-btn)",
+        }}
       >
         <MotionButton>
           <Stack justifyContent={"center"} alignItems={"center"}>
@@ -23,6 +26,9 @@ const LandingButtons = ({ buttons = [] }) => {
       <Link
         className={`noDecoration btn rightBtn btn-landing`}
         to={buttons[1]?.link}
+        style={{
+          width: "var(--longest-btn)",
+        }}
       >
         <MotionButton>
           <Stack justifyContent={"center"} alignItems={"center"}>

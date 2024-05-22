@@ -21,19 +21,18 @@ const Footer = () => {
         justifyContent={{ sm: "space-between" }}
       >
         <Stack gap={4} textAlign={"center"}>
-          <img src={"/logo.webp"} alt="logo" className={style.logo} />
-
-          <h2>WESTMAR</h2>
+          <img src={"/logo_white.webp"} alt="logo" className={style.logo} />
         </Stack>
 
         <Stack
           width={{ xs: "100%", sm: "auto" }}
-          direction={"row"}
+          direction={{ xs: "column", sm: "row" }}
+          alignItems={"center"}
           className={style.info}
-          gap={{ xs: 2, sm: 8 }}
+          gap={{ xs: 4, sm: 8 }}
           justifyContent={{ xs: "center", sm: "center" }}
         >
-          <Stack gap={1}>
+          <Stack gap={1} alignItems={{ xs: "center", sm: "flex-start" }}>
             <h3>{t("Write to us")}</h3>
             <Stack
               direction={"row"}
@@ -52,15 +51,15 @@ const Footer = () => {
               <BsTelephone /> +48 123 123 123
             </Stack>
           </Stack>
-          <Stack gap={1}>
-            <h3>{t("Whare are we")}</h3>
+          <Stack gap={1} alignItems={{ xs: "center", sm: "flex-start" }}>
+            <h3>{t("Where are we")}</h3>
             <Stack
               direction={"row"}
               gap={1}
               alignItems={"center"}
               className={style.infoItem}
             >
-              <FaRegAddressBook /> ul. Główna 00-000
+              <FaRegAddressBook /> ul. Antoniego Hryniewickiego
             </Stack>
             <Stack
               direction={"row"}
@@ -68,34 +67,37 @@ const Footer = () => {
               alignItems={"center"}
               className={style.infoItem}
             >
-              <FaCity /> Gdańsk
+              <FaCity /> Gdynia
             </Stack>
           </Stack>
         </Stack>
 
         <Stack gap={2} alignItems={"center"} textAlign={"center"} p={1}>
           <MotionButton>
-            <Link to={"/"} className={style.link}>
+            <Link to={"/"} className={`${style.link} noDecoration`}>
               {t("Home page")}
             </Link>
           </MotionButton>
           <MotionButton>
-            <Link to={"/reservation"} className={style.link}>
+            <Link to={"/reservation"} className={`${style.link} noDecoration`}>
               {t("Reservation")}
             </Link>
           </MotionButton>
           <MotionButton>
-            <Link to={"/pricing"} className={style.link}>
+            <Link to={"/pricing"} className={`${style.link} noDecoration`}>
               {t("Pricing")}
             </Link>
           </MotionButton>
           <MotionButton>
-            <Link to={"/boat_specification"} className={style.link}>
-              {t("Boat specification")}
+            <Link
+              to={"/boat_specification"}
+              className={`${style.link} noDecoration`}
+            >
+              {t("Boat specifications")}
             </Link>
           </MotionButton>
           <MotionButton>
-            <Link to={"/contact"} className={style.link}>
+            <Link to={"/contact"} className={`${style.link} noDecoration`}>
               {t("Contact")}
             </Link>
           </MotionButton>

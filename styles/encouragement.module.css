@@ -8,10 +8,34 @@
   min-width: 50%;
 }
 
+.contentText {
+  max-width: calc(var(--max-width-content) * 0.75);
+}
+
+.videoWrapper {
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video {
+  z-index: -1;
+  object-fit: cover;
+  height: 100%;
+}
+
 .goldText {
   color: var(--secondary)
 }
 
 .link {
   letter-spacing: var(--wide-letter-spacing);
+}
+
+.btn {
+  background-color: var(--secondary);
+  color: var(--primary);
+  max-width: var(--longest-btn);
+  padding: .5rem 4rem;
+  align-self: center;
 }

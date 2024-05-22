@@ -11,7 +11,7 @@ const SpecBox = ({ title, text, condition, icon }) => {
         opacity: condition ? "100%" : "50%",
       }}
     >
-      <Stack alignItems={"center"} gap={1.5}>
+      <Stack alignItems={"center"} gap={1.5} height={"100%"}>
         <Stack
           className={style.circle}
           alignItems={"center"}
@@ -21,6 +21,7 @@ const SpecBox = ({ title, text, condition, icon }) => {
             <div className={style.icon}>{icon}</div>
           </MotionOpacity>
         </Stack>
+
         <Stack justifyContent={"center"} gap={0.25}>
           <MotionOpacity>
             <h3 className={`${style.title} ${style.centered}`}>{title}</h3>

@@ -3,6 +3,7 @@ import { Stack, Table } from "@mui/joy";
 import style from "../styles/pricingSpecifications.module.css";
 import MotionButton from "./MotionButton.jsx";
 import MotionSection from "./MotionSection.jsx";
+import { Link } from "react-router-dom";
 
 const PricingSpecifications = () => {
   const { t } = useTranslation();
@@ -110,13 +111,16 @@ const PricingSpecifications = () => {
             </tr>
           </tbody>
         </Table>
-        <button className={`${style.btn} btn bold`}>
+        <Link
+          className={`${style.btn} btn bold noDecoration`}
+          to={"/reservation"}
+        >
           <MotionButton>
             <span className={`mediumLetterSpacing ${style.btnText}`}>
               {t("Book or call")}
             </span>
           </MotionButton>
-        </button>
+        </Link>
 
         <Stack gap={2} textAlign={"center"} lineHeight={2}>
           <MotionSection>

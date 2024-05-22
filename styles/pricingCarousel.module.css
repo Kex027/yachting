@@ -10,13 +10,36 @@
 
 .header {
   color: var(--primary);
+  text-align: center;
 }
 
-.img {
-  object-fit: contain;
+.card {
+  background-color: var(--primary);
+  box-shadow: 0 0 5px black;
+  height: 470px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cardImg {
+  object-fit: cover;
   width: 100%;
+  height: 100%;
+}
+
+.cardTextBox {
+  background-color: var(--primary);
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
 }
 
 .cardText {
   color: var(--neutral);
+}
+
+.img {
+  height: 20rem;
+  background-size: contain;
 }

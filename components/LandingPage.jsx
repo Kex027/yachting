@@ -11,7 +11,7 @@ const LandingPage = ({ text, buttons = [] }) => {
       alignItems={"center"}
       gap={2}
     >
-      <Stack className={"content"} gap={{ xs: 2, md: 0 }}>
+      <Stack className={"content"} gap={{ xs: 2, md: 1 }}>
         <LandingTitle text={text} />
         <LandingButtons buttons={buttons} />
       </Stack>

@@ -21,7 +21,12 @@ const Header = () => {
   ];
 
   return (
-    <Stack alignItems={"center"} width={"100vw"} className={style.container}>
+    <Stack
+      alignItems={"center"}
+      width={"100vw"}
+      className={style.container}
+      sx={{ position: { xs: "absolute", md: "fixed" } }}
+    >
       <Stack
         className={style.content}
         direction={"row"}

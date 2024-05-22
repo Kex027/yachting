@@ -18,14 +18,14 @@
   width: 60%;
   left: 0;
 
-  border-right: 1px solid var(--primary);
+  border-right: 5px solid var(--neutral);
 }
 
 .rightSpec {
   width: 40%;
   right: 0;
 
-  border-left: 1px solid var(--primary);
+  border-left: 5px solid var(--neutral);
 }
 
 .leftSpec, .rightSpec {
@@ -35,17 +35,22 @@
   height: 100%;
 }
 
+.checked {
+  opacity: 30%;
+  background-color: var(--neutral);
+}
+
 .leftSpec:hover, .rightSpec:hover {
-  opacity: 25%;
+  opacity: 30%;
   background-color: var(--neutral);
 }
 
 .box {
   width: 9rem;
-  min-height: 9rem;
+  min-height: 11rem;
   background-color: var(--primary);
   color: var(--neutral);
-  padding: 1rem;
+  padding: .9rem;
 
 }
 

@@ -1,41 +1,22 @@
-import {
-  AspectRatio,
-  Box,
-  Card,
-  CardContent,
-  CardOverflow,
-  Stack,
-} from "@mui/joy";
+import { Box, CardOverflow, Stack } from "@mui/joy";
 import style from "../styles/pricingCarousel.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import MotionSection from "./MotionSection.jsx";
 import { useTranslation } from "react-i18next";
+import { createRef, useEffect, useRef, useState } from "react";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
-const Arrow = (props) => {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        zIndex: 1,
-        left: props?.side === "left" ? "1rem" : null,
-        right: props?.side === "right" ? "1rem" : null,
-      }}
-      onClick={onClick}
-    />
-  );
-};
+// TODO reszte wyciac
 
 const PricingCarousel = () => {
   const { t } = useTranslation();
+  const sliderRef = useRef(null);
+  const sliderMapRef = useRef(null);
   const settings = {
     dots: true,
-    adaptiveHeight: true,
-    nextArrow: <Arrow side={"right"} />,
-    prevArrow: <Arrow side={"left"} />,
+    arrows: false,
     style: {
       position: "relative",
       width: "100%",
@@ -47,10 +28,6 @@ const PricingCarousel = () => {
     responsive: [
       {
         breakpoint: 600,
-        settings: {
-          nextArrow: <></>,
-          prevArrow: <></>,
-        },
       },
     ],
   };
@@ -83,47 +60,97 @@ const PricingCarousel = () => {
     { img: "Wyspa Sobieszewska.jpg", title: "Wyspa Sobieszewska", text: "" },
   ];
   const maps = [
-    <iframe
-      src="https://www.google.com/maps/d/u/3/embed?mid=1o7b80y9zczGgqnGbuQBViYS8uopcHrQ&ehbc=2E312F"
-      width="640"
-      height="480"
-    ></iframe>,
-    <iframe
-      src="https://www.google.com/maps/d/u/3/embed?mid=1jBQwMNGYU3GQXG3dOOTsbcAr0xrOXSw&ehbc=2E312F"
-      width="640"
-      height="480"
-    ></iframe>,
-    <iframe
-      src="https://www.google.com/maps/d/u/3/embed?mid=1SuGz7-XJH3Yi1bfcPusACz7pMDDuJoc&ehbc=2E312F"
-      width="640"
-      height="480"
-    ></iframe>,
-    <iframe
-      src="https://www.google.com/maps/d/u/3/embed?mid=1_4EULvCun-RxPvyPfrMkUTUbo1UXQvA&ehbc=2E312F"
-      width="640"
-      height="480"
-    ></iframe>,
-    <iframe
-      src="https://www.google.com/maps/d/u/3/embed?mid=1smxySBVmhCFYus4gmt1-iNyuTR3cvvQ&ehbc=2E312F"
-      width="640"
-      height="480"
-    ></iframe>,
-    <iframe
-      src="https://www.google.com/maps/d/u/3/embed?mid=1A6HvD8lUdZXGvPgZPADbAcjbvXwLXDo&ehbc=2E312F"
-      width="640"
-      height="480"
-    ></iframe>,
-    <iframe
-      src="https://www.google.com/maps/d/u/3/embed?mid=1RRA8Nwl_t3sxWhDkBUdxt2PCCDtm1Gg&ehbc=2E312F"
-      width="640"
-      height="480"
-    ></iframe>,
-    <iframe
-      src="https://www.google.com/maps/d/u/3/embed?mid=1S7nDZlkomoFuwRGY0u2CXOVSl-L9538&ehbc=2E312F"
-      width="640"
-      height="480"
-    ></iframe>,
+    {
+      map: (
+        <iframe
+          src="https://www.google.com/maps/d/u/3/embed?mid=1o7b80y9zczGgqnGbuQBViYS8uopcHrQ&ehbc=2E312F"
+          width="100%"
+          height="100%"
+        ></iframe>
+      ),
+      path: "Gdynia - Gdańsk (Górki Zachodnie, Martwa wisła, Westerplatte, Stare miasto) - Gdynia",
+    },
+    {
+      map: (
+        <iframe
+          src="https://www.google.com/maps/d/u/3/embed?mid=1jBQwMNGYU3GQXG3dOOTsbcAr0xrOXSw&ehbc=2E312F"
+          width="100%"
+          height="100%"
+        ></iframe>
+      ),
+      path: "Gdynia - Wyspa Sobieszewska - Gdynia",
+    },
+    {
+      map: (
+        <iframe
+          src="https://www.google.com/maps/d/u/3/embed?mid=1SuGz7-XJH3Yi1bfcPusACz7pMDDuJoc&ehbc=2E312F"
+          width="100%"
+          height="100%"
+        ></iframe>
+      ),
+      path: "Gdynia - Torpedownia - Puck - Gdynia",
+    },
+    {
+      map: (
+        <iframe
+          src="https://www.google.com/maps/d/u/3/embed?mid=1_4EULvCun-RxPvyPfrMkUTUbo1UXQvA&ehbc=2E312F"
+          width="100%"
+          height="100%"
+        ></iframe>
+      ),
+      path: "Gdynia - Torpedownia - Rewa Mew - Gdynia",
+    },
+    {
+      map: (
+        <iframe
+          src="https://www.google.com/maps/d/u/3/embed?mid=1smxySBVmhCFYus4gmt1-iNyuTR3cvvQ&ehbc=2E312F"
+          width="100%"
+          height="100%"
+        ></iframe>
+      ),
+      path: "Gdynia - Kuźnica - Jastarnia - Gdynia",
+    },
+    {
+      map: (
+        <iframe
+          src="https://www.google.com/maps/d/u/3/embed?mid=1A6HvD8lUdZXGvPgZPADbAcjbvXwLXDo&ehbc=2E312F"
+          width="100%"
+          height="100%"
+        ></iframe>
+      ),
+      path: "Gdynia - Jastarnia - Hel - Gdynia",
+    },
+    {
+      map: (
+        <iframe
+          src="https://www.google.com/maps/d/u/3/embed?mid=1RRA8Nwl_t3sxWhDkBUdxt2PCCDtm1Gg&ehbc=2E312F"
+          width="100%"
+          height="100%"
+        ></iframe>
+      ),
+      path: "Gdynia - Orłowo - Sopot - Gdynia",
+    },
+    {
+      map: (
+        <iframe
+          src="https://www.google.com/maps/d/u/3/embed?mid=1S7nDZlkomoFuwRGY0u2CXOVSl-L9538&ehbc=2E312F"
+          width="100%"
+          height="100%"
+        ></iframe>
+      ),
+      path: "Gdynia - Gdańsk (Westerplatte, Port, Stare miasto) - Gdynia",
+    },
   ];
+
+  const textRefs = useRef(cities.map(createRef));
+  const textMapsRefs = useRef(maps.map(createRef));
+  const [paddingMapsValues, setPaddingMapValues] = useState([]);
+  const [paddingValues, setPaddingValues] = useState([]);
+
+  useEffect(() => {
+    setPaddingValues(textRefs?.current);
+    setPaddingMapValues(textMapsRefs?.current);
+  }, []);
 
   return (
     <Stack
@@ -142,59 +169,112 @@ const PricingCarousel = () => {
         </MotionSection>
 
         <Stack sx={{ width: "100%" }} direction={{ md: "row" }} gap={2}>
-          <Box sx={{ width: { xs: "100%", md: "50%", paddingBottom: "25px" } }}>
-            <Slider {...settings} className="slider-container">
+          <Box
+            sx={{
+              width: { xs: "100%", md: "50%" },
+              paddingBottom: "25px",
+              position: "relative",
+            }}
+          >
+            <Slider {...settings} className="slider-container" ref={sliderRef}>
               {cities.map(({ img, title, text }, index) => (
-                <Card
-                  key={index}
-                  sx={{
-                    backgroundColor: "var(--primary)",
-                    border: "none",
-                    borderRadius: "0px",
-                    boxShadow: "0px 0px 5px black",
-                  }}
-                >
-                  <CardOverflow>
-                    <AspectRatio>
-                      <img src={img} alt={title} className={style.img} />
-                    </AspectRatio>
-                  </CardOverflow>
-                  <CardContent
-                    sx={{
-                      height: "100%",
-                      paddingTop: { xs: ".5rem", sm: "1rem" },
-                      textAlign: "center",
+                <Box key={index} className={style.card}>
+                  <img
+                    src={img}
+                    alt={title}
+                    className={style.cardImg}
+                    style={{
+                      paddingBottom:
+                        paddingValues[index]?.current?.clientHeight + "px",
                     }}
+                  />
+
+                  <Stack
+                    sx={{
+                      padding: { xs: ".5rem", sm: "1rem" },
+                    }}
+                    className={style.cardTextBox}
+                    ref={textRefs.current[index]}
                   >
                     <MotionSection>
-                      <h2 className={style.cardText}>{title}</h2>
-                      <p className={style.cardText}>{text}</p>
+                      <Stack gap={0.5}>
+                        <h2 className={style.cardText}>{title}</h2>
+                        <p className={style.cardText}>{text}</p>
+                      </Stack>
                     </MotionSection>
-                  </CardContent>
-                </Card>
+                  </Stack>
+
+                  <span
+                    className={`btnArrow leftArrowBtn`}
+                    onClick={() => sliderRef?.current?.slickPrev()}
+                  >
+                    <MdKeyboardArrowLeft />
+                  </span>
+                  <span
+                    className={`btnArrow rightArrowBtn`}
+                    onClick={() => sliderRef?.current?.slickNext()}
+                  >
+                    <MdKeyboardArrowRight />
+                  </span>
+                </Box>
               ))}
             </Slider>
           </Box>
 
-          <Box sx={{ width: { xs: "100%", md: "50%" }, paddingBottom: "25px" }}>
-            <Slider {...settings} className="slider-container">
-              {maps.map((item, index) => (
-                <Card
-                  key={index}
-                  sx={{
-                    backgroundColor: "var(--primary)",
-                    border: "none",
-                    borderRadius: "0px",
-                    boxShadow: "0px 0px 5px black",
-                  }}
-                >
-                  <CardOverflow>
-                    <AspectRatio>{item}</AspectRatio>
+          <Stack
+            sx={{ width: { xs: "100%", md: "50%" }, paddingBottom: "25px" }}
+          >
+            <Slider
+              {...settings}
+              className="slider-container"
+              ref={sliderMapRef}
+            >
+              {maps.map(({ map, path }, index) => (
+                <Box key={index} className={style.card}>
+                  <CardOverflow
+                    sx={{
+                      overflow: "hidden",
+                      height: "100%",
+                      paddingBottom:
+                        paddingMapsValues[index]?.current?.clientHeight +
+                        16 +
+                        "px",
+                    }}
+                  >
+                    {map}
                   </CardOverflow>
-                </Card>
+                  <Box
+                    sx={{
+                      padding: { xs: ".5rem", sm: "1rem" },
+                    }}
+                    className={style.cardTextBox}
+                  >
+                    <MotionSection>
+                      <p
+                        className={style.cardText}
+                        ref={textMapsRefs?.current[index]}
+                      >
+                        {path}
+                      </p>
+                    </MotionSection>
+                  </Box>
+
+                  <span
+                    className={`btnArrow leftArrowBtn`}
+                    onClick={() => sliderMapRef?.current?.slickPrev()}
+                  >
+                    <MdKeyboardArrowLeft />
+                  </span>
+                  <span
+                    className={`btnArrow rightArrowBtn`}
+                    onClick={() => sliderMapRef?.current?.slickNext()}
+                  >
+                    <MdKeyboardArrowRight />
+                  </span>
+                </Box>
               ))}
             </Slider>
-          </Box>
+          </Stack>
         </Stack>
       </Stack>
     </Stack>

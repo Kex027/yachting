@@ -14,7 +14,7 @@ const LandingTitle = ({ text = "" }) => {
         <Box sx={{ fontSize: { md: "3rem" } }}>
           <span>
             {arrayOfWords
-              .slice(0, Math.ceil(arrayOfWords.length / 2))
+              .slice(0, arrayOfWords.length / 2)
               .map((word) => (word + " ")?.toUpperCase())}
           </span>
 
@@ -25,7 +25,7 @@ const LandingTitle = ({ text = "" }) => {
             }}
           >
             {arrayOfWords
-              .slice(Math.ceil(arrayOfWords.length / 2))
+              .slice(arrayOfWords.length / 2)
               .map((word) => (word + " ")?.toUpperCase())}
           </span>
         </Box>

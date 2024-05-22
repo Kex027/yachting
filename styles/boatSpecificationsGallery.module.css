@@ -6,6 +6,10 @@
   color: var(--primary);
 }
 
+.title {
+  text-align: center;
+}
+
 .gallery {
   overflow: hidden;
   padding: .5rem;

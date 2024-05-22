@@ -14,6 +14,8 @@ const WelcomeTo = () => {
     { imgUrl: "/mainPageYacht.jpg", icon: <FaClock /> },
   ];
 
+  //TODO trzecie zdjecie sushi (ai generated / pixabay)
+
   return (
     <Stack
       alignItems={"center"}

@@ -1,13 +1,17 @@
-import { Stack } from "@mui/joy";
+import { Box, Stack } from "@mui/joy";
 import style from "../styles/boatSpecificationsGallery.module.css";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "yet-another-react-lightbox/styles.css";
 import { Lightbox } from "yet-another-react-lightbox";
+import Slider from "react-slick";
+import sliderStyle from "../styles/pricingCarousel.module.css";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 const BoatSpecificationsGallery = () => {
   const { t } = useTranslation();
+  const sliderRef = useRef(null);
   const [openImageModal, setOpenImageModal] = useState(false);
   const [imageIndex, setImageIndex] = useState(0);
   const images = [
@@ -20,14 +24,29 @@ const BoatSpecificationsGallery = () => {
     { src: "mainPageYacht.jpg" },
     { src: "mainPageYacht.jpg" },
   ];
+  const settings = {
+    dots: true,
+    arrows: false,
+    style: {
+      position: "relative",
+      width: "100%",
+      paddingBottom: "1rem",
+
+      overflowX: "visible",
+      borderRadius: "0px",
+    },
+    responsive: [
+      {
+        breakpoint: 600,
+      },
+    ],
+  };
+
   const closeModal = () => setOpenImageModal(false);
   const openModal = () => setOpenImageModal(true);
 
   return (
-    <Stack
-      className={`${style.container} sectionInsetShadow`}
-      alignItems={"center"}
-    >
+    <Stack className={`${style.container}`} alignItems={"center"}>
       <Stack
         className={`content ${style.content}`}
         alignItems={"center"}
@@ -35,8 +54,35 @@ const BoatSpecificationsGallery = () => {
         mb={{ md: "1rem" }}
         gap={2}
       >
-        <h1>{t("Gallery")}</h1>
-        <h2>{t("See our boat")}</h2>
+        <h1 className={style.title}>{t("Gallery")}</h1>
+        <h2 className={style.title}>{t("See our boat")}</h2>
+
+        <Stack
+          display={{ xs: "flex", sm: "none" }}
+          width={"100%"}
+          paddingBottom="25px"
+        >
+          <Slider {...settings} className="slider-container" ref={sliderRef}>
+            {images.map(({ src }, index) => (
+              <Box key={index} className={sliderStyle.card}>
+                <img src={src} alt="es" className={sliderStyle.cardImg} />
+
+                <span
+                  className={`btnArrow leftArrowBtn`}
+                  onClick={() => sliderRef?.current?.slickPrev()}
+                >
+                  <MdKeyboardArrowLeft />
+                </span>
+                <span
+                  className={`btnArrow rightArrowBtn`}
+                  onClick={() => sliderRef?.current?.slickNext()}
+                >
+                  <MdKeyboardArrowRight />
+                </span>
+              </Box>
+            ))}
+          </Slider>
+        </Stack>
 
         <Stack
           direction={"row"}
@@ -44,6 +90,7 @@ const BoatSpecificationsGallery = () => {
           gap={2}
           justifyContent={"center"}
           className={style.gallery}
+          display={{ xs: "none", sm: "flex" }}
         >
           {images?.map(({ src }, index) => (
             <motion.img

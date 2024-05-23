@@ -6,15 +6,17 @@
 }
 
 .content {
-  height: 3.5rem;
   width: 100%;
   max-width: var(--max-width-content);
   font-family: "Mont serrat", sans-serif;
 }
 
+.logoWrapper {
+  overflow: hidden;
+}
+
 .logo {
-  height: 2.5rem;
-  margin-left: 1rem;
+  height: 100%;
 }
 
 .burgerButton {

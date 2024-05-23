@@ -1,4 +1,4 @@
-import { Button, Stack } from "@mui/joy";
+import { Box, Button, Stack } from "@mui/joy";
 import { IoMenu } from "react-icons/io5";
 import { Link, NavLink } from "react-router-dom";
 import MobileHeader from "./MobileHeader.jsx";
@@ -29,12 +29,19 @@ const Header = () => {
     >
       <Stack
         className={style.content}
+        height={{ xs: "4rem", md: "5rem" }}
+        padding={{ md: "0 1rem" }}
         direction={"row"}
         justifyContent={"space-between"}
         alignItems={"center"}
       >
         <Link to={"/"}>
-          <img src={"/logo.webp"} alt="logo" className={style.logo} />
+          <Box
+            height={{ xs: "2rem", lg: "3.5rem" }}
+            className={style.logoWrapper}
+          >
+            <img src={"/logo.webp"} alt="logo" className={style.logo} />
+          </Box>
         </Link>
 
         <Button
@@ -64,7 +71,9 @@ const Header = () => {
                 }
               >
                 <MotionButton>
-                  <span className={style.linkText}>{text}</span>
+                  <Box className={style.linkText} fontSize={{ lg: "1.25rem" }}>
+                    {text}
+                  </Box>
                 </MotionButton>
               </NavLink>
             </motion.div>

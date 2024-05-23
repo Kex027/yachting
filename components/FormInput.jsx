@@ -6,7 +6,7 @@ const FormInput = ({ label, register, required = false, max = 50 }) => {
   return (
     <Stack gap={1} className={style.inputWrapper}>
       <MotionSection>
-        <FormLabel sx={{ color: "black" }}>{label}</FormLabel>
+        <FormLabel sx={{ color: "black", fontSize: "1rem" }}>{label}</FormLabel>
       </MotionSection>
       <MotionSection>
         <Input
@@ -19,6 +19,7 @@ const FormInput = ({ label, register, required = false, max = 50 }) => {
           className={style.input}
           variant={"soft"}
           color={"primary"}
+          size={"lg"}
           required={required}
           slotProps={{
             input: {

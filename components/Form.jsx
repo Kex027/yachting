@@ -9,7 +9,7 @@ import MotionButton from "./MotionButton.jsx";
 const Form = ({ firstTitle = "", secondTitle = "" }) => {
   const { t } = useTranslation();
   const { register, handleSubmit } = useForm();
-
+  //TODO add captcha
   const sendEmail = (data, e) => {
     e.preventDefault();
 
@@ -34,15 +34,15 @@ const Form = ({ firstTitle = "", secondTitle = "" }) => {
         <form onSubmit={handleSubmit(sendEmail)}>
           <Stack
             gap={{ xs: 2, md: 16 }}
-            direction={{ md: "row" }}
+            direction={{ sm: "row" }}
             alignItems={{ xs: "center", md: "flex-start" }}
           >
             <Stack
               alignItems={"center"}
               gap={2}
-              justifyContent={{ md: "space-between" }}
-              width={{ xs: "100%", md: "50%" }}
-              maxWidth={{ xs: "var(--longest-btn)", md: "100%" }}
+              justifyContent={{ sm: "space-between" }}
+              width={{ xs: "100%", sm: "50%" }}
+              maxWidth={{ sm: "100%" }}
             >
               <FormInput
                 type={"text"}
@@ -59,17 +59,16 @@ const Form = ({ firstTitle = "", secondTitle = "" }) => {
                 label={t("Phone label")}
                 register={{ ...register("phone") }}
               />
-              {/*pattern: "+[0-9]{2}[0-9]{9}"*/}
             </Stack>
 
             <Stack
               gap={1}
-              alignSelf={{ xs: "center", md: "start" }}
-              width={{ xs: "100%", md: "50%" }}
-              maxWidth={{ xs: "var(--longest-btn)", md: "100%" }}
+              alignSelf={{ xs: "center", sm: "start" }}
+              width={{ xs: "100%", sm: "50%" }}
+              maxWidth={{ sm: "100%" }}
             >
               <MotionSection>
-                <FormLabel sx={{ color: "black" }}>
+                <FormLabel sx={{ color: "black", fontSize: "1rem" }}>
                   {t("Message label")}
                 </FormLabel>
               </MotionSection>
@@ -84,6 +83,7 @@ const Form = ({ firstTitle = "", secondTitle = "" }) => {
                     backgroundColor: "var(--light-blue)",
                     color: "var(--primary)",
                   }}
+                  size={"lg"}
                   slotProps={{
                     textarea: {
                       ...register("message"),
@@ -95,7 +95,10 @@ const Form = ({ firstTitle = "", secondTitle = "" }) => {
 
               <Button
                 type={"submit"}
-                style={{ backgroundColor: "var(--primary)" }}
+                style={{
+                  backgroundColor: "var(--primary)",
+                  fontSize: "1rem",
+                }}
               >
                 <MotionButton>{t("Submit button")}</MotionButton>
               </Button>

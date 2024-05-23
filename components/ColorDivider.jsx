@@ -10,6 +10,7 @@ const ColorDivider = ({ children, color = "var(--secondary)" }) => {
         "--Divider-lineColor": color,
         color: color,
         width: "100%",
+        fontSize: { lg: "1rem" },
       }}
     >
       {children}

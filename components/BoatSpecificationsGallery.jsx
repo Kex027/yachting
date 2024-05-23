@@ -8,6 +8,7 @@ import { Lightbox } from "yet-another-react-lightbox";
 import Slider from "react-slick";
 import sliderStyle from "../styles/pricingCarousel.module.css";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import MotionSection from "./MotionSection.jsx";
 
 const BoatSpecificationsGallery = () => {
   const { t } = useTranslation();
@@ -54,8 +55,12 @@ const BoatSpecificationsGallery = () => {
         mb={{ md: "1rem" }}
         gap={2}
       >
-        <h1 className={style.title}>{t("Gallery")}</h1>
-        <h2 className={style.title}>{t("See our boat")}</h2>
+        <MotionSection>
+          <h1 className={style.title}>{t("Gallery")}</h1>
+        </MotionSection>
+        <MotionSection>
+          <h2 className={style.title}>{t("See our boat")}</h2>
+        </MotionSection>
 
         <Stack
           display={{ xs: "flex", sm: "none" }}

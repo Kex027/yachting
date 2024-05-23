@@ -18,7 +18,11 @@ const LandingButtons = ({ buttons = [] }) => {
         }}
       >
         <MotionButton>
-          <Stack justifyContent={"center"} alignItems={"center"}>
+          <Stack
+            justifyContent={"center"}
+            alignItems={"center"}
+            fontSize={{ lg: "1.25rem" }}
+          >
             {buttons[0]?.text.toUpperCase()}
           </Stack>
         </MotionButton>
@@ -31,7 +35,11 @@ const LandingButtons = ({ buttons = [] }) => {
         }}
       >
         <MotionButton>
-          <Stack justifyContent={"center"} alignItems={"center"}>
+          <Stack
+            justifyContent={"center"}
+            alignItems={"center"}
+            fontSize={{ lg: "1.25rem" }}
+          >
             {buttons[1]?.text.toUpperCase()}
           </Stack>
         </MotionButton>

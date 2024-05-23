@@ -1,4 +1,4 @@
-import { Stack } from "@mui/joy";
+import { Box, Stack } from "@mui/joy";
 import style from "../styles/card.module.css";
 import MotionSection from "./MotionSection.jsx";
 
@@ -11,18 +11,21 @@ const Card = ({ title, description, imgUrl, icon }) => {
         backgroundSize: "cover",
       }}
       alignItems={"center"}
-      gap={2}
     >
       <MotionSection>
-        <h1>
-          <Stack direction={"row"} alignItems={"center"} gap={2}>
-            {icon} {title}
-          </Stack>
-        </h1>
-        <p>{description}</p>
+        <Stack gap={1}>
+          <h1>
+            <Stack
+              direction={"row"}
+              alignItems={"center"}
+              justifyContent={"space-between"}
+            >
+              {icon} <span className={style.title}>{title}</span>
+            </Stack>
+          </h1>
+          <Box fontSize={{ lg: "1.1rem" }}>{description}</Box>
+        </Stack>
       </MotionSection>
-
-      <div className={style.overlay}></div>
     </Stack>
   );
 };

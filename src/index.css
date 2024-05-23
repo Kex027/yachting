@@ -12,7 +12,7 @@
   --neutral: #e1e8ef;
   --neutral-2: #d0e0ef;
 
-  --max-width-content: 960px;
+  --max-width-content: 1250px;
   --longest-btn: 260px;
 
   --normal-letter-spacing: 1px;
@@ -120,6 +120,13 @@ body {
   right: 0;
 }
 
+.normalFontSize {
+  font-size: 1rem;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
 
 /* SCROLL BAR */
 ::-webkit-scrollbar {

@@ -11,7 +11,7 @@ const LandingTitle = ({ text = "" }) => {
           textWrap: "balance",
         }}
       >
-        <Box sx={{ fontSize: { md: "3rem" } }}>
+        <Box sx={{ fontSize: { md: "3.25rem" } }}>
           <span>
             {arrayOfWords
               .slice(0, arrayOfWords.length / 2)

@@ -16,6 +16,7 @@ import {
 import { PiEngineFill } from "react-icons/pi";
 import { IoIosSpeedometer } from "react-icons/io";
 import { BiSolidFridge } from "react-icons/bi";
+import MotionSection from "./MotionSection.jsx";
 
 const Specifications = () => {
   const { t } = useTranslation();
@@ -109,8 +110,12 @@ const Specifications = () => {
           alignSelf={"flex-end"}
           sx={{ fontSize: { md: "2rem" } }}
         >
-          <h3>{t("Equipment")}</h3>
-          <h3>{t("Specification")}</h3>
+          <MotionSection>
+            <h3>{t("Equipment")}</h3>
+          </MotionSection>
+          <MotionSection>
+            <h3>{t("Specification")}</h3>
+          </MotionSection>
         </Stack>
         <Box className={style.wrapper}>
           <Box

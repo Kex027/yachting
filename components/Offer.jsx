@@ -19,7 +19,7 @@ const Offer = () => {
           justifyContent={"space-between"}
           alignItems={"center"}
         >
-          <h1 className={"underline"}>{t("Offer")}</h1>
+          <h1>{t("Offer")?.toUpperCase()}</h1>
           <Link
             className={`${style.btn} btn bold noDecoration`}
             to={"/reservation"}
@@ -57,6 +57,7 @@ const Offer = () => {
                 justifyContent={"center"}
                 alignItems={"center"}
                 letterSpacing={{ sm: "var(--wide-letter-spacing)" }}
+                fontSize={{ lg: "1.25rem" }}
               >
                 {t("Pricing").toUpperCase()}
               </Stack>
@@ -74,6 +75,7 @@ const Offer = () => {
                 justifyContent={"center"}
                 alignItems={"center"}
                 letterSpacing={{ sm: "var(--wide-letter-spacing)" }}
+                fontSize={{ lg: "1.25rem" }}
               >
                 {t("Reservation").toUpperCase()}
               </Stack>

@@ -78,7 +78,7 @@ const PricingCarousel = () => {
           height="100%"
         ></iframe>
       ),
-      path: "Gdynia - Wyspa Sobieszewska - Gdynia",
+      path: "Gdynia - Orłowo - Sopot - Gdynia",
     },
     {
       map: (
@@ -88,7 +88,7 @@ const PricingCarousel = () => {
           height="100%"
         ></iframe>
       ),
-      path: "Gdynia - Torpedownia - Puck - Gdynia",
+      path: "Gdynia - Gdańsk (Westerplatte, Port, Stare miasto) - Gdynia",
     },
     {
       map: (
@@ -98,7 +98,7 @@ const PricingCarousel = () => {
           height="100%"
         ></iframe>
       ),
-      path: "Gdynia - Torpedownia - Rewa Mew - Gdynia",
+      path: "Gdynia - Jastarnia - Hel - Gdynia",
     },
     {
       map: (
@@ -118,7 +118,7 @@ const PricingCarousel = () => {
           height="100%"
         ></iframe>
       ),
-      path: "Gdynia - Jastarnia - Hel - Gdynia",
+      path: "Gdynia - Torpedownia - Rewa Mew - Gdynia",
     },
     {
       map: (
@@ -128,7 +128,7 @@ const PricingCarousel = () => {
           height="100%"
         ></iframe>
       ),
-      path: "Gdynia - Orłowo - Sopot - Gdynia",
+      path: "Gdynia - Torpedownia - Puck - Gdynia",
     },
     {
       map: (
@@ -138,7 +138,7 @@ const PricingCarousel = () => {
           height="100%"
         ></iframe>
       ),
-      path: "Gdynia - Gdańsk (Westerplatte, Port, Stare miasto) - Gdynia",
+      path: "Gdynia - Wyspa Sobieszewska - Gdynia",
     },
   ];
 
@@ -234,6 +234,7 @@ const PricingCarousel = () => {
                   <CardOverflow
                     sx={{
                       overflow: "hidden",
+                      position: "relative",
                       height: "100%",
                       paddingBottom:
                         paddingMapsValues[index]?.current?.clientHeight +

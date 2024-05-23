@@ -24,28 +24,28 @@ export const translationsEN = {
     Offer: "Offer",
     Call: "Call",
     "Offer 1 title": "Skipper",
-    "Offer 2 title": "Rental period",
-    "Offer 3 title": "Sail freely",
+    "Offer 2 title": "Sail to your content",
+    "Offer 3 title": "Additional amenities",
     "Offer 1 description":
-      "When choosing our boat, you don't have to worry about qualifications. The price includes professional service from qualified skippers, so you can fully relax and enjoy the cruise, admiring the waters of the Gdańsk Bay.",
+      "The price includes professional care and service of our qualified steersmen,  no need to worry about not having a license , just sit back, enjoy the cruise and take in the views of the Gdansk Bay.",
     "Offer 2 description":
-      "When choosing our boat, you don't have to worry about qualifications. The price includes professional service from qualified skippers, so you can fully relax and enjoy the cruise, admiring the waters of the Gdańsk Bay.",
+      "We’re flexible! You can rent our boat for a standard route of our choice, or choose your own! Give us a call or leave a message and we will adjust the offer to your need.",
     "Offer 3 description":
-      "When choosing our boat, you don't have to worry about qualifications. The price includes professional service from qualified skippers, so you can fully relax and enjoy the cruise, admiring the waters of the Gdańsk Bay.",
+      "Order the pick up service, and a luxurious BMW limousine will scoop you up from any location across the three city area (Gdansk, Sopot, Gdynia). If you plan a long journey with us you might get hungry, let us know and we will order sushi and drinks for you!",
     "Do you have questions": "Do you have questions?",
     "Check out us": "Check out us",
     "Boat data": "Boat data",
     "Explore & chill with us": "Explore & chill with us",
-    "We invite you to": "We invite you to...",
-    "Welcome 1 title": "Heading 1",
-    "Welcome 2 title": "Heading 2",
-    "Welcome 3 title": "Heading 3",
+    "We invite you to": "Join us for...",
+    "Welcome 1 title": "Unforgettable experiences!",
+    "Welcome 2 title": "A sea adventure!",
+    "Welcome 3 title": "Culinary discoveries",
     "Welcome 1 description":
-      "desc 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consectetur cumque deserunt ea error expedita molestias perferendis quae recusandae rerum?",
+      "Do you feel like strolling and sightseeing? We recommend Gdansk Old Town. Maybe you prefer to stay more active during your holidays? Swim with us to Hel! No matter what, we got you covered! If you want to see more head to our destination gallery in the pricing tab!",
     "Welcome 2 description":
-      "desc 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consectetur cumque deserunt ea error expedita molestias perferendis quae recusandae rerum?",
+      "Our boat Solano 27 putting out no little power goes up tp 45 knots and will surely have you hooked for more! On top of that premium finish and a light sea breeze will make you fall in love with it. You want to see more details? head to the boat specification tab!",
     "Welcome 3 description":
-      "desc 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consectetur cumque deserunt ea error expedita molestias perferendis quae recusandae rerum?",
+      "The local cuisine is waiting do be discovered throughout the entire coast! Rich with many species of fish Baltic Sea has much to offer. We on the other hand offer you a bit less of a traditional experience with our sushi catering service!",
     "Form reservation first title": "Send a booking inquiry",
     "Form reservation second title":
       "Suggest us your own ideas for a cruise - we will consider everything",
@@ -62,17 +62,18 @@ export const translationsEN = {
     Gallery: "Gallery",
     "Sample cruises": "Sample cruises",
     "Planning cruise": "Planning cruise",
-    "Description planning cruise":
-      "Route Selection\n" +
-      "Define Your Destination: Determine the purpose of your trip, whether it's vacation, business travel, or a family outing.\n" +
-      "Choose the Optimal Route: Consider distance, road conditions, and local attractions.\n" +
-      "Map Your Route: Use apps or online maps, and ensure you have an offline version.\n" +
-      "Schedule\n" +
-      "Travel Time: Set departure and arrival times, factoring in stops.\n" +
-      "Flexibility: Prepare backup plans for unforeseen circumstances.\n" +
-      "Safety\n" +
-      "Check Road Conditions: Review warnings and traffic regulations.\n" +
-      "Emergency Equipment: Make sure you have a first aid kit and necessary tools.\n",
+    "Description planning cruise title":
+      "Journey preparation and important information:",
+    "Description planning cruise point 1":
+      "When booking a trip with us remember to mention the destination of your choice, so that we can properly prepare our gear, crew and supplies.",
+    "Description planning cruise point 2":
+      "If you chose your own route, prepare a trip plan and let us know ahead in order for us to price and verify it, as well as designate an optimal course.",
+    "Description planning cruise point 3":
+      "If you decided on any additional services also let us know",
+    "Description planning cruise point 4":
+      "Please, remember your reservation might get cancelled based on alerting weather reports, in which case you’re fully guaranteed your money back.",
+    "Description planning cruise point 5":
+      "In case of no show or severe late you are not entitled to a refund",
     "Our boat": "Our boat",
     "See our boat": "Look at our Solano 27 up close",
     Price: "Price",
@@ -161,15 +162,15 @@ export const translationsPL = {
     "Boat data": "Dane łodzi",
     "Explore & chill with us": "Zwiedzaj & wypoczywaj z nami",
     "We invite you to": "Zapraszamy na...",
-    "Welcome 1 title": "Nagłówek 1",
-    "Welcome 2 title": "Nagłówek 2",
-    "Welcome 3 title": "Nagłówek 3",
+    "Welcome 1 title": "Niezapomniane przeżycia!",
+    "Welcome 2 title": "Morską przygodę!",
+    "Welcome 3 title": "Kulinarne doznania!",
     "Welcome 1 description":
-      "opis 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consectetur cumque deserunt ea error expedita molestias perferendis quae recusandae rerum?",
+      "Masz ochotę na spacer i zwiedzanie? Polecamy Gdańską starówkę. Może jednak interesuje cię bardziej aktywny sposób wypoczynku? Popłyń z nami na Hel! Dla każdego coś się znajdzie, zachęcamy do obejrzenia galerii w zakładce cennik!",
     "Welcome 2 description":
-      "opis 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consectetur cumque deserunt ea error expedita molestias perferendis quae recusandae rerum?",
+      "Nasza łódź Solano 27 dysponująca nie małą mocą rozwija prędkości do 45 węzłów i z pewnością pobudzi twój zmysł wilka morskiego! Do tego luksusowe wykończenie i morska bryza sprawią, że zakochasz się w morskich wyprawach. Chcesz poznać szczegóły? Odwiedź zakładkę specyfikacja łodzi!",
     "Welcome 3 description":
-      "opis 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consectetur cumque deserunt ea error expedita molestias perferendis quae recusandae rerum?",
+      "Na terenie całego wybrzeża lokalne specjały czekają na odkrycie! Bogate w owoce morze bałtyckie ma wiele do zaoferowania. My natomiast z nieco mniej tradycyjnym podejściem, zachęcamy do skorzystania z naszej usługi- cateringu z sushi!",
     "Form reservation first title": "Wyślij zapytanie rezerwacyjne",
     "Form reservation second title":
       "Zaproponuj nam własne pomysły na rejs – wszystko rozważymy",
@@ -186,17 +187,18 @@ export const translationsPL = {
     Gallery: "Galeria",
     "Sample cruises": "Przykładowe trasy",
     "Planning cruise": "Planowanie Trasy",
-    "Description planning cruise":
-      "Wybór Trasy\n" +
-      "Określenie Celu: Zdefiniuj cel podróży, czy to wakacje, podróż służbowa czy rodzinna wycieczka.\n" +
-      "Wybór Optymalnej Trasy: Rozważ dystans, warunki drogowe i atrakcje lokalne.\n" +
-      "Mapa Trasy: Skorzystaj z aplikacji lub map online, zapewnij także wersję offline.\n" +
-      "Harmonogram\n" +
-      "Czas Podróży: Ustal godziny startu i przyjazdu, uwzględniając przystanki.\n" +
-      "Elastyczność: Przygotuj plany zapasowe na wypadek nieprzewidzianych sytuacji.\n" +
-      "Bezpieczeństwo\n" +
-      "Sprawdź Warunki Drogowe: Przeglądaj ostrzeżenia i przepisy drogowe.\n" +
-      "Wyposażenie Awaryjne: Upewnij się, że masz apteczkę i niezbędne narzędzia.",
+    "Description planning cruise title":
+      "Przygotowanie do rejsu i ważne informacje:",
+    "Description planning cruise point 1":
+      "Bookując z nami charter daj nam znać jaką destynację wybrałeś, dzięki temu będziemy mogli odpowiednio przygotować sprzęt, załogę i zaopatrzenie.",
+    "Description planning cruise point 2":
+      "Jeśli wybrałeś własną trasę przygotuj plan wycieczki i powiadom nas o tym wcześniej w celu wyceny, weryfikacji i opracowania odpowiedniego kursu",
+    "Description planning cruise point 3":
+      "Jeśli decydujesz się na którąś z dodatkowych usług również nie zapomnij o tym wspomnieć.",
+    "Description planning cruise point 4":
+      "Pamiętaj, warunki na morzu bywają nieprzewidywalne, może okazać się, że w dniu twojej rezerwacji uniemożliwią wypłynięcie. Przy takiej okoliczności gwarantujemy pełen zwrot pieniędzy lub inny termin.",
+    "Description planning cruise point 5":
+      "W przypadku nie stawienia się lub dużego spóźnienia w dniu rezerwacji pieniądze nie zostaną zwrócone",
     "Our boat": "Nasza łódź",
     "See our boat": "Obejrzyj nasze Solano 27 z bliska",
     Price: "Cena",

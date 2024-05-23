@@ -12,7 +12,9 @@ const OfferItem = ({ number = 1 }) => {
         <h1>
           <Stack direction={"row"} alignItems={"center"} gap={2}>
             <LuClock className={"goldText"} />
-            <span>{t(`Offer ${number} title`)}</span>
+            <span style={{ maxWidth: "calc(var(--longest-btn) - 50px)" }}>
+              {t(`Offer ${number} title`)}
+            </span>
           </Stack>
         </h1>
         <Box textAlign={"center"}>{t(`Offer ${number} description`)}</Box>

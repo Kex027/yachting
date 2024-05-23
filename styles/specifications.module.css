@@ -46,12 +46,11 @@
 }
 
 .box {
-  width: 9rem;
+  width: 11rem;
   min-height: 11rem;
   background-color: var(--primary);
   color: var(--neutral);
   padding: .9rem;
-
 }
 
 .circle {

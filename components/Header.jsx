@@ -40,7 +40,7 @@ const Header = () => {
             height={{ xs: "2rem", lg: "3.5rem" }}
             className={style.logoWrapper}
           >
-            <img src={"/logo.webp"} alt="logo" className={style.logo} />
+            <img src={"/logo_white.webp"} alt="logo" className={style.logo} />
           </Box>
         </Link>
 

@@ -5,15 +5,31 @@ import { useForm } from "react-hook-form";
 import MotionSection from "./MotionSection.jsx";
 import FormInput from "./FormInput.jsx";
 import MotionButton from "./MotionButton.jsx";
+import { Resend } from "resend";
 
 const Form = ({ firstTitle = "", secondTitle = "" }) => {
   const { t } = useTranslation();
   const { register, handleSubmit } = useForm();
+  const resend = new Resend("re_6GM9UCCL_BpdKKhQ9qytrSXFE79aUSqSV");
   //TODO add captcha
-  const sendEmail = (data, e) => {
-    e.preventDefault();
 
-    console.log(data);
+  const sendEmail = async (formData, e) => {
+    e.preventDefault();
+    console.log(formData);
+
+    const { data, error } = await resend.emails.send({
+      from: formData.email,
+      to: ["westmarboats@gmail.com"],
+      // subject: `${formData.name} ${formData.phone}`,
+      subject: `${formData.name}`,
+      html: `Message: ${formData.message}`,
+    });
+
+    if (error) {
+      return console.error({ error });
+    }
+
+    console.log({ data });
   };
 
   return (

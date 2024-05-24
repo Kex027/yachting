@@ -17,7 +17,7 @@ const ContactTemplate = ({ landingTitle = "", firstTitle, secondTitle }) => {
             link: "/boat_specification",
           },
         ]}
-        bgImg={"/boatInTerrain/Foto-9.jpg"}
+        bgImg={"/boatInTerrain/Foto-9.webp"}
       />
 
       <Form firstTitle={firstTitle} secondTitle={secondTitle} />

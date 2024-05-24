@@ -15,16 +15,16 @@ const BoatSpecificationsGallery = () => {
   const [openImageModal, setOpenImageModal] = useState(false);
   const [imageIndex, setImageIndex] = useState(0);
   const images = [
-    { src: "boatGallery/Foto-1.jpg" },
-    { src: "boatGallery/Foto-6.jpg" },
-    { src: "boatGallery/Foto-8.jpg" },
-    { src: "boatGallery/Foto-10.jpg" },
-    { src: "boatGallery/Foto-11.jpg" },
-    { src: "boatGallery/Foto-13.jpg" },
-    { src: "boatGallery/Foto-14.jpg" },
-    { src: "boatGallery/Foto-15.jpg" },
-    { src: "boatGallery/Foto-16.jpg" },
-    { src: "boatGallery/Foto-19.jpg" },
+    { src: "boatGallery/Foto-1.webp" },
+    { src: "boatGallery/Foto-6.webp" },
+    { src: "boatGallery/Foto-8.webp" },
+    { src: "boatGallery/Foto-10.webp" },
+    { src: "boatGallery/Foto-11.webp" },
+    { src: "boatGallery/Foto-13.webp" },
+    { src: "boatGallery/Foto-14.webp" },
+    { src: "boatGallery/Foto-15.webp" },
+    { src: "boatGallery/Foto-16.webp" },
+    { src: "boatGallery/Foto-19.webp" },
   ];
   const settings = {
     dots: true,

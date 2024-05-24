@@ -8,8 +8,6 @@ import { useTranslation } from "react-i18next";
 import { createRef, useEffect, useRef, useState } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
-// TODO reszte wyciac
-
 const PricingCarousel = () => {
   const { t } = useTranslation();
   const sliderRef = useRef(null);

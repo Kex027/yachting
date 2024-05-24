@@ -21,7 +21,7 @@ const MainPage = () => {
           { text: t("Pricing"), link: "/pricing" },
           { text: t("Reservation"), link: "/reservation" },
         ]}
-        bgImg={"/boatInTerrain/Foto-1.jpg"}
+        bgImg={"/boatInTerrain/Foto-1.webp"}
       />
       <Encouragement />
       <Offer />

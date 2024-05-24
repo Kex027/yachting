@@ -23,7 +23,7 @@ const Pricing = () => {
             link: "/boat_specification",
           },
         ]}
-        bgImg={"/boatInTerrain/Foto-2.jpg"}
+        bgImg={"/boatInTerrain/Foto-2.webp"}
       />
 
       <PricingSpecifications />

@@ -9,12 +9,10 @@ import MotionSection from "./MotionSection.jsx";
 const WelcomeTo = () => {
   const { t } = useTranslation();
   const cards = [
-    { imgUrl: "/mainPageYacht.jpg", icon: <FaClock /> },
-    { imgUrl: "/mainPageYacht.jpg", icon: <FaClock /> },
-    { imgUrl: "/mainPageYacht.jpg", icon: <FaClock /> },
+    { imgUrl: "/boatInTerrain/Foto-14.jpg", icon: <FaClock /> },
+    { imgUrl: "/boatInTerrain/Foto-7.jpg", icon: <FaClock /> },
+    { imgUrl: "/sushi.jpg", icon: <FaClock /> },
   ];
-
-  //TODO trzecie zdjecie sushi (ai generated / pixabay)
 
   return (
     <Stack

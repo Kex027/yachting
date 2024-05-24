@@ -23,6 +23,7 @@ const BoatSpecification = () => {
             link: "/pricing",
           },
         ]}
+        bgImg={"/boatGallery/Foto-1.jpg"}
       />
 
       <BoatSpecificationsGallery />

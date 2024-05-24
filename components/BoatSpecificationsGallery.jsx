@@ -1,7 +1,6 @@
 import { Box, Stack } from "@mui/joy";
 import style from "../styles/boatSpecificationsGallery.module.css";
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import "yet-another-react-lightbox/styles.css";
 import { Lightbox } from "yet-another-react-lightbox";
@@ -16,14 +15,16 @@ const BoatSpecificationsGallery = () => {
   const [openImageModal, setOpenImageModal] = useState(false);
   const [imageIndex, setImageIndex] = useState(0);
   const images = [
-    { src: "mainPageYacht.jpg" },
-    { src: "mainPageYacht.jpg" },
-    { src: "mainPageYacht.jpg" },
-    { src: "mainPageYacht.jpg" },
-    { src: "mainPageYacht.jpg" },
-    { src: "mainPageYacht.jpg" },
-    { src: "mainPageYacht.jpg" },
-    { src: "mainPageYacht.jpg" },
+    { src: "boatGallery/Foto-1.jpg" },
+    { src: "boatGallery/Foto-6.jpg" },
+    { src: "boatGallery/Foto-8.jpg" },
+    { src: "boatGallery/Foto-10.jpg" },
+    { src: "boatGallery/Foto-11.jpg" },
+    { src: "boatGallery/Foto-13.jpg" },
+    { src: "boatGallery/Foto-14.jpg" },
+    { src: "boatGallery/Foto-15.jpg" },
+    { src: "boatGallery/Foto-16.jpg" },
+    { src: "boatGallery/Foto-19.jpg" },
   ];
   const settings = {
     dots: true,
@@ -98,21 +99,9 @@ const BoatSpecificationsGallery = () => {
           display={{ xs: "none", sm: "flex" }}
         >
           {images?.map(({ src }, index) => (
-            <motion.img
-              initial={{
-                opacity: 0,
-                filter: "brightness(1)",
-                transform: "scale(1)",
-              }}
-              whileInView={{ opacity: 1 }}
-              whileHover={{
-                filter: "brightness(.75)",
-                transform: "scale(1.05)",
-                cursor: "pointer",
-              }}
-              whileTap={{ filter: "brightness(1)", transform: "scale(.9)" }}
+            <img
               src={src}
-              alt="Yacht"
+              alt={`Yacht photo ${index}`}
               key={index}
               className={style.img}
               onClick={() => {

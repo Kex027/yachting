@@ -28,8 +28,13 @@ const CheckOutUs = () => {
           <Tile
             text={t("Boat data")?.toUpperCase()}
             link={"/boat_specification"}
+            bgImg={"/boatGallery/Foto-18.jpg"}
           />
-          <Tile text={t("Contact")?.toUpperCase()} link={"/contact"} />
+          <Tile
+            text={t("Contact")?.toUpperCase()}
+            link={"/contact"}
+            bgImg={"/boatInTerrain/Foto-9.jpg"}
+          />
         </Stack>
       </Stack>
     </Stack>

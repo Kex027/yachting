@@ -5,31 +5,37 @@ import { useForm } from "react-hook-form";
 import MotionSection from "./MotionSection.jsx";
 import FormInput from "./FormInput.jsx";
 import MotionButton from "./MotionButton.jsx";
-import { Resend } from "resend";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Form = ({ firstTitle = "", secondTitle = "" }) => {
   const { t } = useTranslation();
-  const { register, handleSubmit } = useForm();
-  const resend = new Resend("re_6GM9UCCL_BpdKKhQ9qytrSXFE79aUSqSV");
+  const formRef = useRef();
+  const { register, handleSubmit, reset } = useForm();
   //TODO add captcha
 
   const sendEmail = async (formData, e) => {
     e.preventDefault();
-    console.log(formData);
 
-    const { data, error } = await resend.emails.send({
-      from: formData.email,
-      to: ["westmarboats@gmail.com"],
-      // subject: `${formData.name} ${formData.phone}`,
-      subject: `${formData.name}`,
-      html: `Message: ${formData.message}`,
-    });
-
-    if (error) {
-      return console.error({ error });
-    }
-
-    console.log({ data });
+    emailjs
+      .sendForm("service_i44268b", "template_7ay39cq", formRef.current, {
+        publicKey: "h10TmZST7blLXja7R",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          reset();
+          toast.success(t("Email success"), {
+            position: "bottom-right",
+            pauseOnFocusLoss: false,
+          });
+        },
+        (error) => {
+          console.log("FAILED...", error);
+        },
+      );
   };
 
   return (
@@ -47,7 +53,7 @@ const Form = ({ firstTitle = "", secondTitle = "" }) => {
           </MotionSection>
         </Stack>
 
-        <form onSubmit={handleSubmit(sendEmail)}>
+        <form onSubmit={handleSubmit(sendEmail)} ref={formRef}>
           <Stack
             gap={{ xs: 2, md: 16 }}
             direction={{ sm: "row" }}
@@ -122,6 +128,8 @@ const Form = ({ firstTitle = "", secondTitle = "" }) => {
           </Stack>
         </form>
       </Stack>
+
+      <ToastContainer />
     </Stack>
   );
 };

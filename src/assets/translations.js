@@ -120,6 +120,7 @@ export const translationsEN = {
     "Aft deck": "Deck with access to the water",
     "Fridge sink": "Fridge, stove, sink",
     Equipment: "Equipment",
+    "Email success": "Sent successfully!",
   },
 };
 
@@ -245,5 +246,6 @@ export const translationsPL = {
     "Aft deck": "Pokład z zejściem do wody",
     "Fridge sink": "Lodówka, kuchenka, zlew",
     Equipment: "Wyposażenie",
+    "Email success": "Wysłano pomyślnie!",
   },
 };
